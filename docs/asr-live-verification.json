@@ -1,0 +1,116 @@
+[
+  {
+    "channel": "aljazeera",
+    "sample_seconds": 20.128,
+    "elapsed_seconds": 21.129395416999614,
+    "first_line_seconds": 5.575350417000664,
+    "lines": [
+      {
+        "speaker": 1,
+        "text": "المووي بعدما رفع الفساد",
+        "start": "0:00:00.00",
+        "end": "0:00:02.50",
+        "detected_language": "ar"
+      },
+      {
+        "speaker": 1,
+        "text": "المووي بعدما رفع الفساد و.",
+        "start": "0:00:00.00",
+        "end": "0:00:03.70",
+        "detected_language": "ar"
+      },
+      {
+        "speaker": 1,
+        "text": "المووي بعدما رفع الفساد و. مع رفع الفساد",
+        "start": "0:00:00.00",
+        "end": "0:00:05.40",
+        "detected_language": "ar"
+      },
+      {
+        "speaker": 1,
+        "text": "المووي بعدما رفع الفساد و. مع رفع الفساد ونسب نهب البنوك خلال حكم الشيخ حسين القروض المتعثرة إلى نحو ثلث إجمالي القروض.",
+        "start": "0:00:00.00",
+        "end": "0:00:12.00",
+        "detected_language": "ar"
+      },
+      {
+        "speaker": 1,
+        "text": "المووي بعدما رفع الفساد و. مع رفع الفساد ونسب نهب البنوك خلال حكم الشيخ حسين القروض المتعثرة إلى نحو ثلث إجمالي القروض. أضيف التقرير أن الحكومة الجديدة وجه صعوبة في معالجة الأزمة نظرا لضعف الإيرادات.",
+        "start": "0:00:00.00",
+        "end": "0:00:18.80",
+        "detected_language": "ar"
+      },
+      {
+        "speaker": 1,
+        "text": "المووي بعدما رفع الفساد و. مع رفع الفساد ونسب نهب البنوك خلال حكم الشيخ حسين القروض المتعثرة إلى نحو ثلث إجمالي القروض. أضيف التقرير أن الحكومة الجديدة وجه صعوبة في معالجة الأزمة نظرا لضعف الإيرادات. وارتفاع التضخم.",
+        "start": "0:00:00.00",
+        "end": "0:00:20.13",
+        "detected_language": "ar"
+      }
+    ]
+  },
+  {
+    "channel": "sky_uk",
+    "sample_seconds": 19.9243125,
+    "elapsed_seconds": 22.074505458000203,
+    "first_line_seconds": 6.4752914999990026,
+    "lines": [
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying",
+        "start": "0:00:00.00",
+        "end": "0:00:02.70",
+        "detected_language": "en"
+      },
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying Oh, by the way.",
+        "start": "0:00:00.00",
+        "end": "0:00:03.60",
+        "detected_language": "en"
+      },
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying Oh, by the way. Locksella Bravo Man.",
+        "start": "0:00:00.00",
+        "end": "0:00:05.10",
+        "detected_language": "en"
+      },
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying Oh, by the way. Locksella Bravo Man. Well, you should ask",
+        "start": "0:00:00.00",
+        "end": "0:00:05.80",
+        "detected_language": "en"
+      },
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying Oh, by the way. Locksella Bravo Man. Well, you should ask him when he asked Miss Jordan for. The point is, he and I share",
+        "start": "0:00:00.00",
+        "end": "0:00:10.00",
+        "detected_language": "en"
+      },
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying Oh, by the way. Locksella Bravo Man. Well, you should ask him when he asked Miss Jordan for. The point is, he and I share Not just an anger, but",
+        "start": "0:00:00.00",
+        "end": "0:00:12.40",
+        "detected_language": "en"
+      },
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying Oh, by the way. Locksella Bravo Man. Well, you should ask him when he asked Miss Jordan for. The point is, he and I share Not just an anger, but a fury towards the",
+        "start": "0:00:00.00",
+        "end": "0:00:14.40",
+        "detected_language": "en"
+      },
+      {
+        "speaker": 1,
+        "text": "They're the most dishonorable person you've ever met. He's not saying Oh, by the way. Locksella Bravo Man. Well, you should ask him when he asked Miss Jordan for. The point is, he and I share Not just an anger, but a fury towards the last conservative government. People like Kenyatta Norken Wishi Suneke and Jeremy Hunt and Ben Wallace. I've got to finish open the doors.",
+        "start": "0:00:00.00",
+        "end": "0:00:19.92",
+        "detected_language": "en"
+      }
+    ]
+  }
+]

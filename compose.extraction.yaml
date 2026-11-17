@@ -1,0 +1,42 @@
+# Opt-in overlay: docker compose -f compose.yaml -f compose.extraction.yaml up --build -d extractor mediamtx
+services:
+  extractor:
+    networks: [default, acquisition]
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.extractor
+    init: true
+    ports: ['127.0.0.1:8002:8002']
+    environment:
+      DIRA_EXTRACTOR_TOKEN: ${DIRA_EXTRACTOR_TOKEN:?Set a private shared extractor token}
+      DIRA_EXTRACTOR_CONFIG: /app/infra/extractors.json
+      DIRA_EXTRACTOR_PUBLISH_BASE: rtsp://mediamtx:8554
+      DIRA_PROXY_KW: ${DIRA_PROXY_KW:-}
+      DIRA_PROXY_UK: ${DIRA_PROXY_UK:-}
+    volumes:
+      - type: bind
+        source: ./infra/extractors.json
+        target: /app/infra/extractors.json
+        read_only: true
+        bind:
+          create_host_path: false
+      - ./secrets:/run/secrets/dira:ro
+    extra_hosts: ['host.docker.internal:host-gateway']
+    restart: unless-stopped
+  mediamtx:
+    networks: [default, acquisition]
+    image: dira-mediamtx-extraction:local
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.mediamtx
+    environment:
+      DIRA_EXTRACTOR_URL: http://extractor:8002
+      DIRA_EXTRACTOR_TOKEN: ${DIRA_EXTRACTOR_TOKEN:?Set a private shared extractor token}
+    volumes:
+      - ./infra/mediamtx.extraction.yml:/mediamtx.yml:ro
+    depends_on:
+      extractor:
+        condition: service_healthy
+networks:
+  default:
+  acquisition:

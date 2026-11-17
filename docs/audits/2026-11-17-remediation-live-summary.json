@@ -1,0 +1,143 @@
+{
+  "duration_seconds": 600.03,
+  "samples": 61,
+  "rest_errors": [],
+  "new_observations": 1010,
+  "max_sampled_lag_seconds": 89.3,
+  "ingest_p95_range_ms": [
+    23.12,
+    37.46
+  ],
+  "outbox_pending_range": [
+    0,
+    6
+  ],
+  "final_channels": [
+    {
+      "id": "aljazeera",
+      "status": "connected",
+      "asr_resets": 0,
+      "asr_skipped_seconds": 0.0
+    },
+    {
+      "id": "alarabiya",
+      "status": "connected",
+      "asr_resets": 1,
+      "asr_skipped_seconds": 90.1
+    },
+    {
+      "id": "alhadath",
+      "status": "connected",
+      "asr_resets": 0,
+      "asr_skipped_seconds": 0.0
+    },
+    {
+      "id": "sky_arabia",
+      "status": "connected",
+      "asr_resets": 1,
+      "asr_skipped_seconds": 90.1
+    },
+    {
+      "id": "asharq",
+      "status": "connected",
+      "asr_resets": 0,
+      "asr_skipped_seconds": 0.0
+    },
+    {
+      "id": "sky_uk",
+      "status": "connected",
+      "asr_resets": 0,
+      "asr_skipped_seconds": 0.0
+    }
+  ],
+  "channel_nonconnected_samples": {
+    "aljazeera": 7,
+    "alarabiya": 0,
+    "alhadath": 0,
+    "sky_arabia": 0,
+    "asharq": 0,
+    "sky_uk": 0
+  },
+  "gaps": [
+    {
+      "id": "d4b7e299-d08b-446b-8308-75ec826b1ac5",
+      "channel_id": "alarabiya",
+      "detected_at": "2026-11-17T12:09:37.187049+00:00",
+      "reason": "asr_lag_limit",
+      "estimated_lost_seconds": 90.1,
+      "bounds_estimated": true,
+      "start": "2026-11-17T12:08:07.087049+00:00",
+      "end": "2026-11-17T12:09:37.187049+00:00",
+      "note": "Coverage interruption; duration is an estimate, not measured lost speech."
+    },
+    {
+      "id": "f1628700-9ba8-46cd-800a-36c9b8202e37",
+      "channel_id": "aljazeera",
+      "detected_at": "2026-11-17T12:09:11.312239+00:00",
+      "reason": "ExceptionGroup",
+      "estimated_lost_seconds": null,
+      "bounds_estimated": true,
+      "start": null,
+      "end": "2026-11-17T12:09:11.312239+00:00",
+      "note": "Coverage interruption; duration is an estimate, not measured lost speech."
+    },
+    {
+      "id": "667a3856-ebca-40c7-baf2-261a31a82fe5",
+      "channel_id": "sky_arabia",
+      "detected_at": "2026-11-17T12:08:13.141257+00:00",
+      "reason": "asr_lag_limit",
+      "estimated_lost_seconds": 90.1,
+      "bounds_estimated": true,
+      "start": "2026-11-17T12:06:43.041257+00:00",
+      "end": "2026-11-17T12:08:13.141257+00:00",
+      "note": "Coverage interruption; duration is an estimate, not measured lost speech."
+    },
+    {
+      "id": "5204c193-7c4b-465d-8df1-5646740a4e92",
+      "channel_id": "aljazeera",
+      "detected_at": "2026-11-17T12:08:04.880680+00:00",
+      "reason": "ExceptionGroup",
+      "estimated_lost_seconds": null,
+      "bounds_estimated": true,
+      "start": null,
+      "end": "2026-11-17T12:08:04.880680+00:00",
+      "note": "Coverage interruption; duration is an estimate, not measured lost speech."
+    },
+    {
+      "id": "d7b65443-1a12-49ff-ba9b-778c4c7af0db",
+      "channel_id": "aljazeera",
+      "detected_at": "2026-11-17T12:06:16.316220+00:00",
+      "reason": "ExceptionGroup",
+      "estimated_lost_seconds": null,
+      "bounds_estimated": true,
+      "start": null,
+      "end": "2026-11-17T12:06:16.316220+00:00",
+      "note": "Coverage interruption; duration is an estimate, not measured lost speech."
+    },
+    {
+      "id": "6345a538-647a-40a5-a8e3-15035f92028f",
+      "channel_id": "aljazeera",
+      "detected_at": "2026-11-17T12:05:59.493006+00:00",
+      "reason": "ExceptionGroup",
+      "estimated_lost_seconds": null,
+      "bounds_estimated": true,
+      "start": null,
+      "end": "2026-11-17T12:05:59.493006+00:00",
+      "note": "Coverage interruption; duration is an estimate, not measured lost speech."
+    }
+  ],
+  "sqlite_quick_check": "ok",
+  "vector_formats": [
+    [
+      "blob",
+      1197,
+      1561.0
+    ],
+    [
+      "text",
+      20317,
+      8443.0
+    ]
+  ],
+  "cloud_briefs_since_restart": 0
+}

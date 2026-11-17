@@ -1,0 +1,7 @@
+{
+  "device": "mps",
+  "dimension": 384,
+  "related_cosine": 0.8416221141815186,
+  "unrelated_cosine": 0.018236149102449417,
+  "three_encodes_seconds": 1.7929177499991056
+}

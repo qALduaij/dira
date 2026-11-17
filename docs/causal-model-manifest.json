@@ -1,0 +1,21 @@
+{
+  "repo": "qfuxa/qwen3-asr-0.6b-streaming",
+  "revision": "827e7ae1d4212cf3080440da728b4d063fd2eef1",
+  "files": [
+    {
+      "path": "models/qwen3-causal/config.json",
+      "bytes": 722,
+      "sha256": "be5d3db88af3050fb4e1b63ca35d27bc20282909a3c67f904f5646c103d9721d"
+    },
+    {
+      "path": "models/qwen3-causal/README.md",
+      "bytes": 7266,
+      "sha256": "90e62b5337f3a88fa4a9466b58b32fb4c12bb08a898407d92dd8d513ce862779"
+    },
+    {
+      "path": "models/qwen3-causal/tower.safetensors",
+      "bytes": 745535024,
+      "sha256": "95acc0d8c104907475ef3b021cf8dd886b28e34ef1ecdae0e68e2b9554048fa8"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "alarabiya_candidate",
+  "source_url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+  "checked_at": "2026-11-17T08:07:05.603490+00:00",
+  "http_status": 200,
+  "playlist_valid": true,
+  "variants": [
+    "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2942360,BANDWIDTH=5263248,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS=\"avc1.640028,mp4a.40.2\",CLOSED-CAPTIONS=NONE",
+    "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1519611,BANDWIDTH=3196376,FRAME-RATE=25,RESOLUTION=1280x720,CODECS=\"avc1.64001f,mp4a.40.2\",CLOSED-CAPTIONS=NONE",
+    "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=662260,BANDWIDTH=1395712,FRAME-RATE=25,RESOLUTION=640x360,CODECS=\"avc1.64001e,mp4a.40.2\",CLOSED-CAPTIONS=NONE",
+    "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=590535,BANDWIDTH=1091904,FRAME-RATE=25,RESOLUTION=426x240,CODECS=\"avc1.42c015,mp4a.40.2\",CLOSED-CAPTIONS=NONE"
+  ],
+  "audio_renditions": [],
+  "probe_exit_code": 0,
+  "streams": [
+    {
+      "index": 0,
+      "id": "0x0",
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "tags": {
+        "variant_bitrate": "5263248"
+      }
+    },
+    {
+      "index": 1,
+      "id": "0x0",
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2,
+      "tags": {
+        "variant_bitrate": "5263248"
+      }
+    },
+    {
+      "index": 2,
+      "id": "0x1",
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "tags": {
+        "variant_bitrate": "3196376"
+      }
+    },
+    {
+      "index": 3,
+      "id": "0x1",
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2,
+      "tags": {
+        "variant_bitrate": "3196376"
+      }
+    },
+    {
+      "index": 4,
+      "id": "0x2",
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 640,
+      "height": 360,
+      "tags": {
+        "variant_bitrate": "1395712"
+      }
+    },
+    {
+      "index": 5,
+      "id": "0x2",
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2,
+      "tags": {
+        "variant_bitrate": "1395712"
+      }
+    },
+    {
+      "index": 6,
+      "id": "0x3",
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 426,
+      "height": 240,
+      "tags": {
+        "variant_bitrate": "1091904"
+      }
+    },
+    {
+      "index": 7,
+      "id": "0x3",
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2,
+      "tags": {
+        "variant_bitrate": "1091904"
+      }
+    }
+  ],
+  "programs": [
+    {
+      "program_id": 0,
+      "stream_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "program_id": 1,
+      "stream_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "program_id": 2,
+      "stream_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "program_id": 3,
+      "stream_indices": [
+        6,
+        7
+      ]
+    }
+  ]
+}

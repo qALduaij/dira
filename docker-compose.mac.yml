@@ -1,0 +1,25 @@
+# Standalone ARM64 media/data plane. Run intelligence and model inference natively for Metal.
+services:
+  mediamtx:
+    image: dira-mediamtx:local
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.mediamtx
+    platform: linux/arm64
+    ports: ['127.0.0.1:8554:8554', '127.0.0.1:8888:8888', '127.0.0.1:8890:8890/udp', '127.0.0.1:9998:9998']
+    volumes: ['./infra/mediamtx.yml:/mediamtx.yml:ro', 'recordings:/recordings']
+    restart: unless-stopped
+    networks: [acquisition]
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    platform: linux/arm64
+    ports: ['127.0.0.1:6333:6333']
+    volumes: ['qdrant:/qdrant/storage']
+    restart: unless-stopped
+    networks: [data_local]
+volumes:
+  recordings:
+  qdrant:
+networks:
+  acquisition:
+  data_local:

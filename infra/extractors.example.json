@@ -1,0 +1,58 @@
+{
+  "domain_proxies": {
+    "51.com.kw": "DIRA_PROXY_KW",
+    "bbc.co.uk": "DIRA_PROXY_UK",
+    "bbc.com": "DIRA_PROXY_UK"
+  },
+  "channels": [
+    {
+      "id": "ktv1",
+      "enabled": false,
+      "extractor": "streamlink",
+      "source_url": "",
+      "refresh_seconds": 300
+    },
+    {
+      "id": "bloomberg",
+      "enabled": false,
+      "extractor": "yt-dlp",
+      "source_url": "",
+      "refresh_seconds": 300
+    },
+    {
+      "id": "cnn",
+      "enabled": false,
+      "extractor": "streamlink",
+      "source_url": "",
+      "refresh_seconds": 300
+    },
+    {
+      "id": "cnbc_arabia",
+      "enabled": false,
+      "extractor": "yt-dlp",
+      "source_url": "",
+      "refresh_seconds": 300
+    },
+    {
+      "id": "bbc",
+      "enabled": false,
+      "extractor": "streamlink",
+      "source_url": "",
+      "refresh_seconds": 300
+    },
+    {
+      "id": "cbs",
+      "enabled": false,
+      "extractor": "yt-dlp",
+      "source_url": "",
+      "refresh_seconds": 300
+    },
+    {
+      "id": "nbc",
+      "enabled": false,
+      "extractor": "yt-dlp",
+      "source_url": "",
+      "refresh_seconds": 300
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "health": {
+    "status": "ok",
+    "mode": "live"
+  },
+  "router": "aurelio",
+  "channels": {
+    "aljazeera": "connected",
+    "alarabiya": "connected",
+    "alhadath": "connected",
+    "sky_arabia": "connected",
+    "asharq": "connected",
+    "sky_uk": "connected"
+  },
+  "metrics": {
+    "evidence": 1107,
+    "pending": 0,
+    "hot_vectors": 1107,
+    "latency_p95_ms": 23.31,
+    "processed": 27,
+    "uptime_seconds": 44,
+    "device": "cpu",
+    "encoder": "multilingual-minilm",
+    "warm_status": "connected",
+    "llm": "configured",
+    "mode": "live",
+    "paused": false,
+    "ws_resyncs": 0,
+    "regex_timeouts": 0,
+    "jobs_pending": 0
+  },
+  "search_hits": 5,
+  "search_weights": {
+    "transcript": 2.0,
+    "ocr": 1.0,
+    "visual": 1.0
+  },
+  "warm_available": true,
+  "latest_python_crash": "Python-2026-11-17-120743.ips"
+}

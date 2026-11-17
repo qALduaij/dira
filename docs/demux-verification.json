@@ -1,0 +1,12 @@
+{
+  "audio": {
+    "exit_code": 0,
+    "bytes": 32000,
+    "error": "[h264 @ 0x7beec4c380] co located POCs unavailable\n    Last message repeated 3 times\n"
+  },
+  "ocr": {
+    "exit_code": 0,
+    "bytes": 1105920,
+    "error": "h264 @ 0x7aa7010280] Error submitting packet to decoder: Unknown error occurred\n[h264 @ 0x7aa6c55880] hardware accelerator failed to decode picture\n[vist#0:0/h264 @ 0x7aa700c600] [dec:h264 @ 0x7aa7010280] Error submitting packet to decoder: Unknown error occurred\n[h264 @ 0x7aa6c55880] hardware accelerator failed to decode picture\n[vist#0:0/h264 @ 0x7aa700c600] [dec:h264 @ 0x7aa7010280] Error submitting packet to decoder: Unknown error occurred\n[h264 @ 0x7aa6c55880] hardware accelerator failed to decode picture\n[vist#0:0/h264 @ 0x7aa700c600] [dec:h264 @ 0x7aa7010280] Error submitting packet to decoder: Unknown error occurred\n[h264 @ 0x7aa6c55880] hardware accelerator failed to decode picture\n[vist#0:0/h264 @ 0x7aa700c600] [dec:h264 @ 0x7aa7010280] Error submitting packet to decoder: Unknown error occurred\n[h264 @ 0x7aa6c55880] hardware accelerator failed to decode picture\n[vist#0:0/h264 @ 0x7aa700c600] [dec:h264 @ 0x7aa7010280] Error submitting packet to decoder: Unknown error occurred\n"
+  }
+}

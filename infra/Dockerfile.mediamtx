@@ -1,0 +1,7 @@
+FROM bluenviron/mediamtx:1.21.4 AS mediamtx
+FROM python:3.12-slim
+# The stock scratch image has no CA bundle. This base supplies trusted roots for HTTPS HLS.
+COPY --from=mediamtx /mediamtx /mediamtx
+COPY scripts/extractor_hook.py /opt/dira/extractor_hook.py
+ENTRYPOINT ["/mediamtx"]
+CMD ["/mediamtx.yml"]

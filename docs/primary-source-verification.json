@@ -1,0 +1,952 @@
+[
+  {
+    "id": "aljazeera",
+    "source_url": "https://live-hls-web-aja-gcp.thehlive.com/AJA/index.m3u8",
+    "checked_at": "2026-11-17T08:02:37.912272+00:00",
+    "http_status": 200,
+    "playlist_valid": true,
+    "variants": [
+      "#EXT-X-STREAM-INF:BANDWIDTH=6741512,AVERAGE-BANDWIDTH=6741512,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS=\"avc1.640029,mp4a.40.2\"",
+      "#EXT-X-STREAM-INF:BANDWIDTH=3309512,AVERAGE-BANDWIDTH=3309512,RESOLUTION=1280x720,FRAME-RATE=25.000,CODECS=\"avc1.640029,mp4a.40.2\"",
+      "#EXT-X-STREAM-INF:BANDWIDTH=1928968,AVERAGE-BANDWIDTH=1928968,RESOLUTION=960x540,FRAME-RATE=25.000,CODECS=\"avc1.640029,mp4a.40.2\"",
+      "#EXT-X-STREAM-INF:BANDWIDTH=1036040,AVERAGE-BANDWIDTH=1036040,RESOLUTION=746x420,FRAME-RATE=25.000,CODECS=\"avc1.4D401F,mp4a.40.2\"",
+      "#EXT-X-STREAM-INF:BANDWIDTH=821531,AVERAGE-BANDWIDTH=821531,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS=\"avc1.4D401F,mp4a.40.2\"",
+      "#EXT-X-STREAM-INF:BANDWIDTH=408987,AVERAGE-BANDWIDTH=408987,RESOLUTION=426x240,FRAME-RATE=25.000,CODECS=\"avc1.4D401F,mp4a.40.2\""
+    ],
+    "audio_renditions": [],
+    "probe_exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "id": "0x0",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "tags": {
+          "variant_bitrate": "6741512"
+        }
+      },
+      {
+        "index": 1,
+        "id": "0x0",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "6741512",
+          "language": "ara"
+        }
+      },
+      {
+        "index": 2,
+        "id": "0x0",
+        "codec_type": "data",
+        "codec_name": "scte_35",
+        "tags": {
+          "variant_bitrate": "6741512"
+        }
+      },
+      {
+        "index": 3,
+        "id": "0x0",
+        "codec_type": "data",
+        "codec_name": "timed_id3",
+        "tags": {
+          "variant_bitrate": "6741512"
+        }
+      },
+      {
+        "index": 4,
+        "id": "0x1",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "tags": {
+          "variant_bitrate": "3309512"
+        }
+      },
+      {
+        "index": 5,
+        "id": "0x1",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "3309512",
+          "language": "ara"
+        }
+      },
+      {
+        "index": 6,
+        "id": "0x1",
+        "codec_type": "data",
+        "codec_name": "scte_35",
+        "tags": {
+          "variant_bitrate": "3309512"
+        }
+      },
+      {
+        "index": 7,
+        "id": "0x1",
+        "codec_type": "data",
+        "codec_name": "timed_id3",
+        "tags": {
+          "variant_bitrate": "3309512"
+        }
+      },
+      {
+        "index": 8,
+        "id": "0x2",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "tags": {
+          "variant_bitrate": "1928968"
+        }
+      },
+      {
+        "index": 9,
+        "id": "0x2",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "1928968",
+          "language": "ara"
+        }
+      },
+      {
+        "index": 10,
+        "id": "0x2",
+        "codec_type": "data",
+        "codec_name": "scte_35",
+        "tags": {
+          "variant_bitrate": "1928968"
+        }
+      },
+      {
+        "index": 11,
+        "id": "0x2",
+        "codec_type": "data",
+        "codec_name": "timed_id3",
+        "tags": {
+          "variant_bitrate": "1928968"
+        }
+      },
+      {
+        "index": 12,
+        "id": "0x3",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 746,
+        "height": 420,
+        "tags": {
+          "variant_bitrate": "1036040"
+        }
+      },
+      {
+        "index": 13,
+        "id": "0x3",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "1036040",
+          "language": "ara"
+        }
+      },
+      {
+        "index": 14,
+        "id": "0x3",
+        "codec_type": "data",
+        "codec_name": "scte_35",
+        "tags": {
+          "variant_bitrate": "1036040"
+        }
+      },
+      {
+        "index": 15,
+        "id": "0x3",
+        "codec_type": "data",
+        "codec_name": "timed_id3",
+        "tags": {
+          "variant_bitrate": "1036040"
+        }
+      },
+      {
+        "index": 16,
+        "id": "0x4",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 640,
+        "height": 360,
+        "tags": {
+          "variant_bitrate": "821531"
+        }
+      },
+      {
+        "index": 17,
+        "id": "0x4",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "821531",
+          "language": "ara"
+        }
+      },
+      {
+        "index": 18,
+        "id": "0x4",
+        "codec_type": "data",
+        "codec_name": "scte_35",
+        "tags": {
+          "variant_bitrate": "821531"
+        }
+      },
+      {
+        "index": 19,
+        "id": "0x4",
+        "codec_type": "data",
+        "codec_name": "timed_id3",
+        "tags": {
+          "variant_bitrate": "821531"
+        }
+      },
+      {
+        "index": 20,
+        "id": "0x5",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 426,
+        "height": 240,
+        "tags": {
+          "variant_bitrate": "408987"
+        }
+      },
+      {
+        "index": 21,
+        "id": "0x5",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "408987",
+          "language": "ara"
+        }
+      },
+      {
+        "index": 22,
+        "id": "0x5",
+        "codec_type": "data",
+        "codec_name": "scte_35",
+        "tags": {
+          "variant_bitrate": "408987"
+        }
+      },
+      {
+        "index": 23,
+        "id": "0x5",
+        "codec_type": "data",
+        "codec_name": "timed_id3",
+        "tags": {
+          "variant_bitrate": "408987"
+        }
+      }
+    ],
+    "programs": [
+      {
+        "program_id": 0,
+        "stream_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "program_id": 1,
+        "stream_indices": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "program_id": 2,
+        "stream_indices": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "program_id": 3,
+        "stream_indices": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "program_id": 4,
+        "stream_indices": [
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "program_id": 5,
+        "stream_indices": [
+          20,
+          21,
+          22,
+          23
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alarabiya",
+    "source_url": "https://live-alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+    "checked_at": "2026-11-17T08:02:37.912659+00:00",
+    "manifest_error": "URLError",
+    "probe_exit_code": 1,
+    "probe_error": "ffprobe could not open playable media"
+  },
+  {
+    "id": "alhadath",
+    "source_url": "https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8",
+    "checked_at": "2026-11-17T08:02:37.912752+00:00",
+    "http_status": 200,
+    "playlist_valid": true,
+    "variants": [
+      "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2358984,BANDWIDTH=8468272,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS=\"avc1.640028,mp4a.40.2\",CLOSED-CAPTIONS=NONE",
+      "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1213852,BANDWIDTH=5589616,FRAME-RATE=25,RESOLUTION=1280x720,CODECS=\"avc1.64001f,mp4a.40.2\",CLOSED-CAPTIONS=NONE",
+      "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=564804,BANDWIDTH=2231560,FRAME-RATE=25,RESOLUTION=640x360,CODECS=\"avc1.64001e,mp4a.40.2\",CLOSED-CAPTIONS=NONE",
+      "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=468541,BANDWIDTH=1487832,FRAME-RATE=25,RESOLUTION=426x240,CODECS=\"avc1.42c015,mp4a.40.2\",CLOSED-CAPTIONS=NONE"
+    ],
+    "audio_renditions": [],
+    "probe_exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "id": "0x0",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "tags": {
+          "variant_bitrate": "8468272"
+        }
+      },
+      {
+        "index": 1,
+        "id": "0x0",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "8468272"
+        }
+      },
+      {
+        "index": 2,
+        "id": "0x1",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "tags": {
+          "variant_bitrate": "5589616"
+        }
+      },
+      {
+        "index": 3,
+        "id": "0x1",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "5589616"
+        }
+      },
+      {
+        "index": 4,
+        "id": "0x2",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 640,
+        "height": 360,
+        "tags": {
+          "variant_bitrate": "2231560"
+        }
+      },
+      {
+        "index": 5,
+        "id": "0x2",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "2231560"
+        }
+      },
+      {
+        "index": 6,
+        "id": "0x3",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 426,
+        "height": 240,
+        "tags": {
+          "variant_bitrate": "1487832"
+        }
+      },
+      {
+        "index": 7,
+        "id": "0x3",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "1487832"
+        }
+      }
+    ],
+    "programs": [
+      {
+        "program_id": 0,
+        "stream_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "program_id": 1,
+        "stream_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "program_id": 2,
+        "stream_indices": [
+          4,
+          5
+        ]
+      },
+      {
+        "program_id": 3,
+        "stream_indices": [
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sky_arabia",
+    "source_url": "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8",
+    "checked_at": "2026-11-17T08:02:38.080174+00:00",
+    "http_status": 200,
+    "playlist_valid": true,
+    "variants": [
+      "#EXT-X-STREAM-INF:CODECS=\"mp4a.40.2,avc1.42C01E\",AVERAGE-BANDWIDTH=486182,RESOLUTION=416x234,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=530185,AUDIO=\"audio_0\"",
+      "#EXT-X-STREAM-INF:CODECS=\"mp4a.40.2,avc1.42C01E\",AVERAGE-BANDWIDTH=871200,RESOLUTION=640x360,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=976800,AUDIO=\"audio_0\"",
+      "#EXT-X-STREAM-INF:CODECS=\"mp4a.40.2,avc1.42C029\",AVERAGE-BANDWIDTH=1311200,RESOLUTION=960x540,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=1487200,AUDIO=\"audio_0\"",
+      "#EXT-X-STREAM-INF:CODECS=\"mp4a.40.2,avc1.640029\",AVERAGE-BANDWIDTH=2191200,RESOLUTION=1280x720,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=2508000,AUDIO=\"audio_0\"",
+      "#EXT-X-STREAM-INF:CODECS=\"mp4a.40.2,avc1.640029\",AVERAGE-BANDWIDTH=3511200,RESOLUTION=1920x1080,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=4039200,AUDIO=\"audio_0\""
+    ],
+    "audio_renditions": [
+      "#EXT-X-MEDIA:LANGUAGE=\"eng\",AUTOSELECT=YES,CHANNELS=\"2\",TYPE=AUDIO,URI=\"index__1.m3u8\",GROUP-ID=\"audio_0\",DEFAULT=NO,NAME=\"eng\""
+    ],
+    "probe_exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "id": "0x0",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "4039200",
+          "compatible_brands": "isomavc1dash",
+          "creation_time": "2026-11-11T22:03:34.000000Z",
+          "handler_name": "ETI ISO Audio Media Handler",
+          "major_brand": "isom",
+          "minor_version": "1",
+          "language": "eng",
+          "comment": "eng"
+        }
+      },
+      {
+        "index": 1,
+        "id": "0x1",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 416,
+        "height": 234,
+        "tags": {
+          "variant_bitrate": "530185",
+          "compatible_brands": "isomavc1dash",
+          "language": "und",
+          "handler_name": "ETI ISO Video Media Handler",
+          "encoder": "Elemental H.264",
+          "major_brand": "isom",
+          "minor_version": "1",
+          "creation_time": "2026-11-11T19:17:47.000000Z"
+        }
+      },
+      {
+        "index": 2,
+        "id": "0x2",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 640,
+        "height": 360,
+        "tags": {
+          "variant_bitrate": "976800",
+          "compatible_brands": "isomavc1dash",
+          "language": "und",
+          "handler_name": "ETI ISO Video Media Handler",
+          "encoder": "Elemental H.264",
+          "major_brand": "isom",
+          "minor_version": "1",
+          "creation_time": "2026-11-05T22:02:08.000000Z"
+        }
+      },
+      {
+        "index": 3,
+        "id": "0x3",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "tags": {
+          "variant_bitrate": "1487200",
+          "compatible_brands": "isomavc1dash",
+          "language": "und",
+          "handler_name": "ETI ISO Video Media Handler",
+          "encoder": "Elemental H.264",
+          "major_brand": "isom",
+          "minor_version": "1",
+          "creation_time": "2026-11-10T11:04:10.000000Z"
+        }
+      },
+      {
+        "index": 4,
+        "id": "0x4",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "tags": {
+          "variant_bitrate": "2508000",
+          "compatible_brands": "isomavc1dash",
+          "language": "und",
+          "handler_name": "ETI ISO Video Media Handler",
+          "encoder": "Elemental H.264",
+          "major_brand": "isom",
+          "minor_version": "1",
+          "creation_time": "2026-11-17T01:36:12.000000Z"
+        }
+      },
+      {
+        "index": 5,
+        "id": "0x5",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "tags": {
+          "variant_bitrate": "4039200",
+          "compatible_brands": "isomavc1dash",
+          "language": "und",
+          "handler_name": "ETI ISO Video Media Handler",
+          "encoder": "Elemental H.264",
+          "major_brand": "isom",
+          "minor_version": "1",
+          "creation_time": "2026-11-11T02:32:44.000000Z"
+        }
+      }
+    ],
+    "programs": [
+      {
+        "program_id": 0,
+        "stream_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "program_id": 1,
+        "stream_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "program_id": 2,
+        "stream_indices": [
+          0,
+          3
+        ]
+      },
+      {
+        "program_id": 3,
+        "stream_indices": [
+          0,
+          4
+        ]
+      },
+      {
+        "program_id": 4,
+        "stream_indices": [
+          0,
+          5
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asharq",
+    "source_url": "https://live-news-v2.asharq.com/asharq.m3u8",
+    "checked_at": "2026-11-17T08:02:44.076150+00:00",
+    "http_status": 200,
+    "playlist_valid": true,
+    "variants": [
+      "#EXT-X-STREAM-INF:CODECS=\"avc1.640028,mp4a.40.2\",AVERAGE-BANDWIDTH=5500000,RESOLUTION=1920x1080,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=5720000",
+      "#EXT-X-STREAM-INF:CODECS=\"avc1.64001F,mp4a.40.2\",AVERAGE-BANDWIDTH=3300000,RESOLUTION=1280x720,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=3432000",
+      "#EXT-X-STREAM-INF:CODECS=\"avc1.4D401E,mp4a.40.2\",AVERAGE-BANDWIDTH=1649964,RESOLUTION=848x480,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=1715971",
+      "#EXT-X-STREAM-INF:CODECS=\"avc1.4D4015,mp4a.40.2\",AVERAGE-BANDWIDTH=824947,RESOLUTION=426x240,VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH=857957",
+      "#EXT-X-STREAM-INF:CODECS=\"mp4a.40.2\",AVERAGE-BANDWIDTH=180000,BANDWIDTH=180000"
+    ],
+    "audio_renditions": [],
+    "probe_exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "id": "0x0",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "tags": {
+          "variant_bitrate": "5720000"
+        }
+      },
+      {
+        "index": 1,
+        "id": "0x0",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "5720000",
+          "language": "und"
+        }
+      },
+      {
+        "index": 2,
+        "id": "0x1",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "tags": {
+          "variant_bitrate": "3432000"
+        }
+      },
+      {
+        "index": 3,
+        "id": "0x1",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "3432000",
+          "language": "und"
+        }
+      },
+      {
+        "index": 4,
+        "id": "0x2",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 848,
+        "height": 480,
+        "tags": {
+          "variant_bitrate": "1715971"
+        }
+      },
+      {
+        "index": 5,
+        "id": "0x2",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "1715971",
+          "language": "und"
+        }
+      },
+      {
+        "index": 6,
+        "id": "0x3",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 426,
+        "height": 240,
+        "tags": {
+          "variant_bitrate": "857957"
+        }
+      },
+      {
+        "index": 7,
+        "id": "0x3",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "857957",
+          "language": "und"
+        }
+      },
+      {
+        "index": 8,
+        "id": "0x4",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "180000",
+          "id3v2_priv.com.apple.streaming.transportStreamTimestamp": "\\x00\\x00\\x00\\x01\\xbf\\x91\\x99\\x00"
+        }
+      }
+    ],
+    "programs": [
+      {
+        "program_id": 0,
+        "stream_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "program_id": 1,
+        "stream_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "program_id": 2,
+        "stream_indices": [
+          4,
+          5
+        ]
+      },
+      {
+        "program_id": 3,
+        "stream_indices": [
+          6,
+          7
+        ]
+      },
+      {
+        "program_id": 4,
+        "stream_indices": [
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sky_uk",
+    "source_url": "https://linear901-oo-hls0-prd-gtm.delivery.skycdp.com/17501/sde-fast-skynews/master.m3u8",
+    "checked_at": "2026-11-17T08:02:44.744645+00:00",
+    "http_status": 200,
+    "playlist_valid": true,
+    "variants": [
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=635461,CODECS=\"avc1.4D4020,mp4a.40.2\",RESOLUTION=512x288,FRAME-RATE=25.000,AUDIO=\"audio1\"",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=343244,CODECS=\"avc1.4D4020,mp4a.40.2\",RESOLUTION=256x144,FRAME-RATE=25.000,AUDIO=\"audio1\"",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1208656,CODECS=\"avc1.4D4020,mp4a.40.2\",RESOLUTION=768x432,FRAME-RATE=25.000,AUDIO=\"audio1\"",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2321331,CODECS=\"avc1.4D4020,mp4a.40.2\",RESOLUTION=1024x576,FRAME-RATE=25.000,AUDIO=\"audio1\"",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3613831,CODECS=\"avc1.640020,mp4a.40.2\",RESOLUTION=1280x720,FRAME-RATE=25.000,AUDIO=\"audio1\"",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5670591,CODECS=\"avc1.640020,mp4a.40.2\",RESOLUTION=1280x720,FRAME-RATE=25.000,AUDIO=\"audio1\"",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=9042331,CODECS=\"avc1.640029,mp4a.40.2\",RESOLUTION=1920x1080,FRAME-RATE=25.000,AUDIO=\"audio1\""
+    ],
+    "audio_renditions": [
+      "#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID=\"audio1\",NAME=\"ENG\",DEFAULT=YES,AUTOSELECT=YES,LANGUAGE=\"ENG\",URI=\"stream08/streamPlaylist.m3u8\""
+    ],
+    "probe_exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "id": "0x0",
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": {
+          "variant_bitrate": "9042331",
+          "language": "ENG",
+          "comment": "ENG"
+        }
+      },
+      {
+        "index": 1,
+        "id": "0x1",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 512,
+        "height": 288,
+        "tags": {
+          "variant_bitrate": "635461"
+        }
+      },
+      {
+        "index": 2,
+        "id": "0x2",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 256,
+        "height": 144,
+        "tags": {
+          "variant_bitrate": "343244"
+        }
+      },
+      {
+        "index": 3,
+        "id": "0x3",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 768,
+        "height": 432,
+        "tags": {
+          "variant_bitrate": "1208656"
+        }
+      },
+      {
+        "index": 4,
+        "id": "0x4",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1024,
+        "height": 576,
+        "tags": {
+          "variant_bitrate": "2321331"
+        }
+      },
+      {
+        "index": 5,
+        "id": "0x5",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "tags": {
+          "variant_bitrate": "3613831"
+        }
+      },
+      {
+        "index": 6,
+        "id": "0x6",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "tags": {
+          "variant_bitrate": "5670591"
+        }
+      },
+      {
+        "index": 7,
+        "id": "0x7",
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "tags": {
+          "variant_bitrate": "9042331"
+        }
+      }
+    ],
+    "programs": [
+      {
+        "program_id": 0,
+        "stream_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "program_id": 1,
+        "stream_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "program_id": 2,
+        "stream_indices": [
+          0,
+          3
+        ]
+      },
+      {
+        "program_id": 3,
+        "stream_indices": [
+          0,
+          4
+        ]
+      },
+      {
+        "program_id": 4,
+        "stream_indices": [
+          0,
+          5
+        ]
+      },
+      {
+        "program_id": 5,
+        "stream_indices": [
+          0,
+          6
+        ]
+      },
+      {
+        "program_id": 6,
+        "stream_indices": [
+          0,
+          7
+        ]
+      }
+    ]
+  }
+]

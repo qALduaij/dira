@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-17T12:05:52.152099+00:00",
+  "mode": "extractive",
+  "coverage": {
+    "window_start": "2026-11-16T12:05:52.152099+00:00",
+    "window_end": "2026-11-17T12:05:52.152099+00:00",
+    "total_observations": 20815,
+    "sampled_observations": 80,
+    "available_channels": 6,
+    "sampled_channels": 6,
+    "first_sample": "2026-11-17T10:14:47.208348+00:00",
+    "last_sample": "2026-11-17T12:05:51.692598+00:00",
+    "method": "time-channel-stratified",
+    "exhaustive": false
+  },
+  "input_count": 80,
+  "cited_count": 18,
+  "unique_channels": [
+    "alarabiya",
+    "alhadath",
+    "aljazeera",
+    "asharq",
+    "sky_arabia",
+    "sky_uk"
+  ],
+  "cloud_called": false
+}

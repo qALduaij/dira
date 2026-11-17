@@ -1,0 +1,210 @@
+{
+ "captured_at": "2026-11-17T15:27:09+0300",
+ "queries": [
+  {
+   "query": "explosions in Sanaa",
+   "elapsed_ms": 380.83,
+   "results": [
+    {
+     "cosine": 0.5283,
+     "lexical": false,
+     "channel": "sky_arabia",
+     "source": "local-perception",
+     "text": "الحرس الثوري انفجارات وحرائق بسفينتين إثر اصطدامهما بألغام بحرية في مضيق هرمز"
+    },
+    {
+     "cosine": 0.6284,
+     "lexical": false,
+     "channel": "alarabiya",
+     "source": "whisperlivekit",
+     "text": "افادت مصادر من صنع بوقع ثلاثة انفجارات يعتقد أنها ناجمة عن غارات قرب معسكر الحفا وانفجار رابع في جبل نقم."
+    },
+    {
+     "cosine": 0.8143,
+     "lexical": false,
+     "channel": "alhadath",
+     "source": "local-perception",
+     "text": "مصادر من صنعاء انفجارات قرب معسكر الحفا وانفجار رابع في جيل نقم"
+    },
+    {
+     "cosine": 0.6016,
+     "lexical": false,
+     "channel": "alhadath",
+     "source": "whisperlivekit",
+     "text": "عن انفجارات في ناقلات وسفن حول مديق"
+    },
+    {
+     "cosine": 0.5251,
+     "lexical": false,
+     "channel": "sky_arabia",
+     "source": "local-perception",
+     "text": "مصدر عراقي لسكاي نيوز عربية القوات في جرف الصخر أحرقت وفجرت مواقع بعد علمها بتوجه لجنة قضائية"
+    }
+   ]
+  },
+  {
+   "query": "North Macedonia Iranian network",
+   "elapsed_ms": 320.69,
+   "results": [
+    {
+     "cosine": 0.18,
+     "lexical": true,
+     "channel": "sky_uk",
+     "source": "whisperlivekit",
+     "text": "between President Putin or President Xi Jinping tomorrow speculation too that Kim Jong Un of North Korea may also speak "
+    },
+    {
+     "cosine": 0.0891,
+     "lexical": true,
+     "channel": "sky_uk",
+     "source": "whisperlivekit",
+     "text": "Our North American correspondent Fraser Moore has been speaking to young people about their thoughts."
+    },
+    {
+     "cosine": 0.1558,
+     "lexical": true,
+     "channel": "sky_uk",
+     "source": "whisperlivekit",
+     "text": "The data shows there are concentrations in urban parts of the Midlands and the North."
+    },
+    {
+     "cosine": 0.2827,
+     "lexical": true,
+     "channel": "alarabiya",
+     "source": "whisperlivekit",
+     "text": "We told the American people we would do no more forever wars. Yes, the president felt he had to destroy the nuclear prog"
+    },
+    {
+     "cosine": 0.682,
+     "lexical": false,
+     "channel": "alhadath",
+     "source": "whisperlivekit",
+     "text": "يتحدث الإعلام اليوناني أن الشبك الإيراني حاولت"
+    }
+   ]
+  },
+  {
+   "query": "مقدونيا الشمالية",
+   "elapsed_ms": 238.09,
+   "results": [
+    {
+     "cosine": 0.6392,
+     "lexical": true,
+     "channel": "alarabiya",
+     "source": "local-perception",
+     "text": "عاجلأفب مقدونيا الشمالية تقول إنهاأحبطت هجوما إرهابيامرتبطابايان في اليونان"
+    },
+    {
+     "cosine": 0.5887,
+     "lexical": true,
+     "channel": "alhadath",
+     "source": "local-perception",
+     "text": "مقدونيا الشمالية تقول إنهاأحبطت هجوما إرهابي مرتبطابايران في اليونان"
+    },
+    {
+     "cosine": 0.6197,
+     "lexical": true,
+     "channel": "alhadath",
+     "source": "local-perception",
+     "text": "مقدونيا الشمالية تقول إنها أحبطت هجوما إرهابيا مرتبطابايران في اليونان"
+    },
+    {
+     "cosine": 0.6005,
+     "lexical": true,
+     "channel": "sky_arabia",
+     "source": "local-perception",
+     "text": "مقدونيا الشمالية تقول إنها أحبطت هجوما \"إرهابيا\" مرتبطا بإيران في اليونان"
+    },
+    {
+     "cosine": 0.6223,
+     "lexical": true,
+     "channel": "sky_arabia",
+     "source": "local-perception",
+     "text": "مقدونيا الشمالية تقول إنها أحبطت هجوما إرهابيا\" مرتبطا بإيران في اليونان"
+    }
+   ]
+  },
+  {
+   "query": "Kuwait parliament dissolved",
+   "elapsed_ms": 320.09,
+   "results": [
+    {
+     "cosine": 0.4204,
+     "lexical": true,
+     "channel": "sky_uk",
+     "source": "whisperlivekit",
+     "text": "In this parliament."
+    },
+    {
+     "cosine": 0.2648,
+     "lexical": true,
+     "channel": "sky_uk",
+     "source": "local-perception",
+     "text": "Milburn: I want to see real changes in this Parliament"
+    },
+    {
+     "cosine": 0.2339,
+     "lexical": true,
+     "channel": "sky_uk",
+     "source": "whisperlivekit",
+     "text": "I want to see real changes in the lives of young people in this parliament."
+    },
+    {
+     "cosine": 0.5759,
+     "lexical": false,
+     "channel": "asharq",
+     "source": "local-perception",
+     "text": "الكويت"
+    },
+    {
+     "cosine": 0.4569,
+     "lexical": false,
+     "channel": "aljazeera",
+     "source": "whisperlivekit",
+     "text": "ورقة السلاح في دع الحكومة اللبنانية"
+    }
+   ]
+  },
+  {
+   "query": "the of in and",
+   "elapsed_ms": 384.7,
+   "results": [
+    {
+     "cosine": 0.8223,
+     "lexical": false,
+     "channel": "sky_uk",
+     "source": "whisperlivekit",
+     "text": "In the"
+    },
+    {
+     "cosine": 0.5621,
+     "lexical": false,
+     "channel": "alarabiya",
+     "source": "local-perception",
+     "text": "العرية ETHER"
+    },
+    {
+     "cosine": 0.5465,
+     "lexical": false,
+     "channel": "alhadath",
+     "source": "local-perception",
+     "text": "إعمال  ان"
+    },
+    {
+     "cosine": 0.7158,
+     "lexical": false,
+     "channel": "sky_uk",
+     "source": "whisperlivekit",
+     "text": "In"
+    },
+    {
+     "cosine": 0.524,
+     "lexical": false,
+     "channel": "alhadath",
+     "source": "local-perception",
+     "text": "العناوين"
+    }
+   ]
+  }
+ ]
+}

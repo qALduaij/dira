@@ -1,0 +1,851 @@
+[
+  {
+    "sample": 0,
+    "http_seconds": 0.011390667001251131,
+    "metrics": {
+      "evidence": 512,
+      "pending": 0,
+      "hot_vectors": 512,
+      "latency_p95_ms": 31.36,
+      "processed": 80,
+      "uptime_seconds": 64,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 26,
+      "alarabiya": 4,
+      "aljazeera": 8,
+      "sky_arabia": 5,
+      "alhadath": 5,
+      "asharq": 4
+    },
+    "recent_ocr_by_channel": {
+      "sky_arabia": 15,
+      "alhadath": 11,
+      "aljazeera": 7,
+      "sky_uk": 12,
+      "asharq": 12,
+      "alarabiya": 11
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "643fd335-8ff0-4722-bf93-fd5bac3488fd",
+        "capture_to_receive_seconds": 0.928175
+      },
+      "alarabiya": {
+        "id": "8e799de2-ab31-48f7-bb05-fa358d0ad6f8",
+        "capture_to_receive_seconds": 7.539128
+      },
+      "aljazeera": {
+        "id": "88a44e36-16e1-41ec-862b-ff42443835be",
+        "capture_to_receive_seconds": 22.361111
+      },
+      "sky_arabia": {
+        "id": "2c2ac482-fbe1-414d-bf3a-ee16f0c07068",
+        "capture_to_receive_seconds": 4.331018
+      },
+      "alhadath": {
+        "id": "77e5367f-9189-4000-9708-8e705fab0b12",
+        "capture_to_receive_seconds": 24.961105
+      },
+      "asharq": {
+        "id": "4353ee0c-2e98-485e-b41f-b929def627bf",
+        "capture_to_receive_seconds": 5.393288
+      }
+    }
+  },
+  {
+    "sample": 1,
+    "http_seconds": 0.01041162500041537,
+    "metrics": {
+      "evidence": 536,
+      "pending": 2,
+      "hot_vectors": 536,
+      "latency_p95_ms": 31.07,
+      "processed": 104,
+      "uptime_seconds": 79,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 27,
+      "asharq": 4,
+      "sky_arabia": 5,
+      "alarabiya": 3,
+      "aljazeera": 8,
+      "alhadath": 4
+    },
+    "recent_ocr_by_channel": {
+      "asharq": 13,
+      "sky_arabia": 16,
+      "alarabiya": 9,
+      "aljazeera": 8,
+      "alhadath": 10,
+      "sky_uk": 13
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "2f2290b5-511b-4125-97c7-44f000f9817d",
+        "capture_to_receive_seconds": 0.57586
+      },
+      "asharq": {
+        "id": "eaf6ce12-33ec-4bc9-ad95-fb2538db7d56",
+        "capture_to_receive_seconds": 8.630488
+      },
+      "sky_arabia": {
+        "id": "fe48b63d-3886-41c9-bf2c-a3c48309fff0",
+        "capture_to_receive_seconds": 6.756093
+      },
+      "alarabiya": {
+        "id": "8e799de2-ab31-48f7-bb05-fa358d0ad6f8",
+        "capture_to_receive_seconds": 7.539128
+      },
+      "aljazeera": {
+        "id": "3cba6f1f-edcc-4383-9471-ecce514dcb66",
+        "capture_to_receive_seconds": 25.316759
+      },
+      "alhadath": {
+        "id": "77e5367f-9189-4000-9708-8e705fab0b12",
+        "capture_to_receive_seconds": 24.961105
+      }
+    }
+  },
+  {
+    "sample": 2,
+    "http_seconds": 0.04608720800024457,
+    "metrics": {
+      "evidence": 561,
+      "pending": 1,
+      "hot_vectors": 561,
+      "latency_p95_ms": 32.63,
+      "processed": 129,
+      "uptime_seconds": 94,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 25,
+      "sky_arabia": 4,
+      "asharq": 3,
+      "aljazeera": 9,
+      "alarabiya": 3,
+      "alhadath": 4
+    },
+    "recent_ocr_by_channel": {
+      "sky_uk": 15,
+      "asharq": 14,
+      "alhadath": 10,
+      "aljazeera": 9,
+      "sky_arabia": 16,
+      "alarabiya": 8
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "a9f1e2f4-9a8a-4413-8a74-6bb0e4f88bcf",
+        "capture_to_receive_seconds": 0.58675
+      },
+      "sky_arabia": {
+        "id": "e3825362-c8d2-40e1-abd5-688a764d5997",
+        "capture_to_receive_seconds": 7.779019
+      },
+      "asharq": {
+        "id": "eaf6ce12-33ec-4bc9-ad95-fb2538db7d56",
+        "capture_to_receive_seconds": 8.630488
+      },
+      "aljazeera": {
+        "id": "96deb426-cee3-44e3-8645-b4f3229abe3c",
+        "capture_to_receive_seconds": 33.80749
+      },
+      "alarabiya": {
+        "id": "2f0026d8-4c87-427b-8835-eac642f39616",
+        "capture_to_receive_seconds": 6.425505
+      },
+      "alhadath": {
+        "id": "bd200102-5e28-4fff-b9ea-9a8c6ef120c0",
+        "capture_to_receive_seconds": 13.33525
+      }
+    }
+  },
+  {
+    "sample": 3,
+    "http_seconds": 0.007773875000566477,
+    "metrics": {
+      "evidence": 591,
+      "pending": 3,
+      "hot_vectors": 591,
+      "latency_p95_ms": 32.88,
+      "processed": 159,
+      "uptime_seconds": 109,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 25,
+      "asharq": 4,
+      "sky_arabia": 5,
+      "alhadath": 3,
+      "alarabiya": 3,
+      "aljazeera": 10
+    },
+    "recent_ocr_by_channel": {
+      "sky_uk": 13,
+      "alarabiya": 11,
+      "aljazeera": 9,
+      "asharq": 14,
+      "alhadath": 8,
+      "sky_arabia": 15
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "387a53f6-5c1c-496f-96bc-47a17b1f0aed",
+        "capture_to_receive_seconds": 0.53267
+      },
+      "asharq": {
+        "id": "9c5ec885-3858-4248-95fa-adcb2678d659",
+        "capture_to_receive_seconds": 11.030826
+      },
+      "sky_arabia": {
+        "id": "39d9a0c3-195e-4142-98ca-deb045511375",
+        "capture_to_receive_seconds": 10.949541
+      },
+      "alhadath": {
+        "id": "81ca4fa0-f24e-4a7b-b4e6-61238357edc7",
+        "capture_to_receive_seconds": 10.398259
+      },
+      "alarabiya": {
+        "id": "b93effc3-9e01-44e5-895f-61647939a029",
+        "capture_to_receive_seconds": 8.728721
+      },
+      "aljazeera": {
+        "id": "c7ddfb40-e530-46ea-9622-fa6fab3dfe1a",
+        "capture_to_receive_seconds": 43.744528
+      }
+    }
+  },
+  {
+    "sample": 4,
+    "http_seconds": 0.010455457999341888,
+    "metrics": {
+      "evidence": 622,
+      "pending": 3,
+      "hot_vectors": 622,
+      "latency_p95_ms": 32.62,
+      "processed": 190,
+      "uptime_seconds": 125,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 26,
+      "alhadath": 4,
+      "sky_arabia": 6,
+      "asharq": 5,
+      "alarabiya": 2,
+      "aljazeera": 7
+    },
+    "recent_ocr_by_channel": {
+      "sky_uk": 11,
+      "alarabiya": 11,
+      "asharq": 14,
+      "aljazeera": 11,
+      "sky_arabia": 14,
+      "alhadath": 9
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "5a7c6c2c-e53c-48bd-886c-2271388c6c0d",
+        "capture_to_receive_seconds": 0.84192
+      },
+      "alhadath": {
+        "id": "881b2c93-11d0-42f0-a581-4e73fe30bf88",
+        "capture_to_receive_seconds": 15.12267
+      },
+      "sky_arabia": {
+        "id": "84e12f8a-13ed-4df5-9204-d163b4433063",
+        "capture_to_receive_seconds": 17.854886
+      },
+      "asharq": {
+        "id": "0db55390-b86e-442f-baaf-9c44d3b8c096",
+        "capture_to_receive_seconds": 9.998385
+      },
+      "alarabiya": {
+        "id": "dd40c43e-88a1-43c4-9b59-053bacbaa10f",
+        "capture_to_receive_seconds": 7.725749
+      },
+      "aljazeera": {
+        "id": "783421f1-6440-4685-9a6c-d780ded5e633",
+        "capture_to_receive_seconds": 39.035951
+      }
+    }
+  },
+  {
+    "sample": 5,
+    "http_seconds": 0.008762457997363526,
+    "metrics": {
+      "evidence": 648,
+      "pending": 1,
+      "hot_vectors": 648,
+      "latency_p95_ms": 32.09,
+      "processed": 216,
+      "uptime_seconds": 140,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 28,
+      "alhadath": 5,
+      "alarabiya": 3,
+      "asharq": 4,
+      "sky_arabia": 5,
+      "aljazeera": 3
+    },
+    "recent_ocr_by_channel": {
+      "aljazeera": 12,
+      "alarabiya": 12,
+      "sky_arabia": 14,
+      "sky_uk": 13,
+      "alhadath": 8,
+      "asharq": 13
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "0da903ac-175b-40ea-8def-3b3c0c7e16ff",
+        "capture_to_receive_seconds": 0.470757
+      },
+      "alhadath": {
+        "id": "4d491ed1-3d8a-4a4d-a226-dbd65bdadd1e",
+        "capture_to_receive_seconds": 20.953723
+      },
+      "alarabiya": {
+        "id": "86e52e16-69ad-4b3b-b5ba-7d489b020ccc",
+        "capture_to_receive_seconds": 13.117779
+      },
+      "asharq": {
+        "id": "aeaa2141-d965-42eb-8e43-d47bd3b189f7",
+        "capture_to_receive_seconds": 9.270605
+      },
+      "sky_arabia": {
+        "id": "84e12f8a-13ed-4df5-9204-d163b4433063",
+        "capture_to_receive_seconds": 17.854886
+      },
+      "aljazeera": {
+        "id": "68ce33f0-eeac-4dcc-9d82-4d43a43b054d",
+        "capture_to_receive_seconds": 45.905794
+      }
+    }
+  },
+  {
+    "sample": 6,
+    "http_seconds": 0.008106041997962166,
+    "metrics": {
+      "evidence": 676,
+      "pending": 2,
+      "hot_vectors": 676,
+      "latency_p95_ms": 32.69,
+      "processed": 244,
+      "uptime_seconds": 155,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 27,
+      "asharq": 4,
+      "alarabiya": 3,
+      "alhadath": 6,
+      "sky_arabia": 5,
+      "aljazeera": 4
+    },
+    "recent_ocr_by_channel": {
+      "asharq": 16,
+      "alarabiya": 12,
+      "alhadath": 8,
+      "sky_uk": 14,
+      "aljazeera": 9,
+      "sky_arabia": 12
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "980a5854-725c-4065-86e3-175d527ac826",
+        "capture_to_receive_seconds": 4.454802
+      },
+      "asharq": {
+        "id": "c0073c93-7c83-4d23-b6fc-b806538f7a9a",
+        "capture_to_receive_seconds": 5.844994
+      },
+      "alarabiya": {
+        "id": "afe9a01c-4ddc-4da2-b599-f17994a39a02",
+        "capture_to_receive_seconds": 9.99704
+      },
+      "alhadath": {
+        "id": "07617592-6d40-416a-8a9e-aef4363c3395",
+        "capture_to_receive_seconds": 24.924417
+      },
+      "sky_arabia": {
+        "id": "aca7c569-d566-4c96-87bd-2bca9bb336cf",
+        "capture_to_receive_seconds": 5.528695
+      },
+      "aljazeera": {
+        "id": "4683af2e-73f9-40b1-881a-92f32e4ac2aa",
+        "capture_to_receive_seconds": 49.158984
+      }
+    }
+  },
+  {
+    "sample": 7,
+    "http_seconds": 0.010033624999778112,
+    "metrics": {
+      "evidence": 707,
+      "pending": 0,
+      "hot_vectors": 707,
+      "latency_p95_ms": 33.16,
+      "processed": 275,
+      "uptime_seconds": 170,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 29,
+      "asharq": 6,
+      "sky_arabia": 5,
+      "alarabiya": 3,
+      "alhadath": 5,
+      "aljazeera": 3
+    },
+    "recent_ocr_by_channel": {
+      "asharq": 18,
+      "alarabiya": 13,
+      "sky_uk": 11,
+      "alhadath": 7,
+      "sky_arabia": 11,
+      "aljazeera": 9
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "8391bb27-0265-4267-9a38-005aa50ee8e2",
+        "capture_to_receive_seconds": 0.353469
+      },
+      "asharq": {
+        "id": "8a235954-cbcf-4070-b852-630c4638c24d",
+        "capture_to_receive_seconds": 15.01612
+      },
+      "sky_arabia": {
+        "id": "784de8cc-f980-416b-b1aa-2cd70bccdadb",
+        "capture_to_receive_seconds": 15.478973
+      },
+      "alarabiya": {
+        "id": "a26336d2-290a-45f7-ae9f-019944d595b1",
+        "capture_to_receive_seconds": 7.028521
+      },
+      "alhadath": {
+        "id": "14efd2e8-2a89-427f-adfe-61463479e1ca",
+        "capture_to_receive_seconds": 26.526584
+      },
+      "aljazeera": {
+        "id": "0644843f-b519-41f0-9638-ab82e1a441f3",
+        "capture_to_receive_seconds": 58.478515
+      }
+    }
+  },
+  {
+    "sample": 8,
+    "http_seconds": 0.007864916002290556,
+    "metrics": {
+      "evidence": 732,
+      "pending": 3,
+      "hot_vectors": 732,
+      "latency_p95_ms": 32.49,
+      "processed": 300,
+      "uptime_seconds": 185,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 27,
+      "sky_arabia": 4,
+      "alarabiya": 3,
+      "asharq": 6,
+      "alhadath": 4,
+      "aljazeera": 3
+    },
+    "recent_ocr_by_channel": {
+      "sky_uk": 14,
+      "aljazeera": 10,
+      "alarabiya": 13,
+      "alhadath": 8,
+      "sky_arabia": 12,
+      "asharq": 16
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "881765c9-1b53-471e-9a2e-56c2c519ec0a",
+        "capture_to_receive_seconds": 4.405307
+      },
+      "sky_arabia": {
+        "id": "21823703-35e7-48da-bb22-7856d09f38bd",
+        "capture_to_receive_seconds": 11.984338
+      },
+      "alarabiya": {
+        "id": "eb7c238a-7cdf-4b36-9391-7192f7d711eb",
+        "capture_to_receive_seconds": 10.638834
+      },
+      "asharq": {
+        "id": "131b7946-bdbc-41df-b8e2-c56a38beaa4f",
+        "capture_to_receive_seconds": 23.585073
+      },
+      "alhadath": {
+        "id": "f2694e7d-b294-4765-a6ab-173b9dc739ec",
+        "capture_to_receive_seconds": 15.439891
+      },
+      "aljazeera": {
+        "id": "15c416f8-805b-40de-bcda-26e46459a983",
+        "capture_to_receive_seconds": 66.847857
+      }
+    }
+  },
+  {
+    "sample": 9,
+    "http_seconds": 0.011136749999423046,
+    "metrics": {
+      "evidence": 771,
+      "pending": 4,
+      "hot_vectors": 771,
+      "latency_p95_ms": 33.64,
+      "processed": 339,
+      "uptime_seconds": 200,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 23,
+      "alarabiya": 4,
+      "sky_arabia": 5,
+      "alhadath": 4,
+      "asharq": 10
+    },
+    "recent_ocr_by_channel": {
+      "alhadath": 8,
+      "aljazeera": 10,
+      "asharq": 16,
+      "sky_arabia": 16,
+      "alarabiya": 12,
+      "sky_uk": 12
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "0139cf63-e794-4666-948f-0e0530200de8",
+        "capture_to_receive_seconds": 0.341738
+      },
+      "alarabiya": {
+        "id": "99a5f78c-9d3f-4dcf-8314-4578ccd98ed5",
+        "capture_to_receive_seconds": 16.680502
+      },
+      "sky_arabia": {
+        "id": "6fadf6d7-7b99-4926-bed9-887566397c75",
+        "capture_to_receive_seconds": 10.751154
+      },
+      "alhadath": {
+        "id": "5d2f6084-fcd0-4022-aee4-a03454dbd193",
+        "capture_to_receive_seconds": 21.599698
+      },
+      "asharq": {
+        "id": "e8d96981-65c7-43d5-8f34-0a068edac877",
+        "capture_to_receive_seconds": 32.173691
+      }
+    }
+  },
+  {
+    "sample": 10,
+    "http_seconds": 0.007983333998708986,
+    "metrics": {
+      "evidence": 800,
+      "pending": 4,
+      "hot_vectors": 800,
+      "latency_p95_ms": 33.86,
+      "processed": 368,
+      "uptime_seconds": 215,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 22,
+      "alarabiya": 5,
+      "alhadath": 4,
+      "sky_arabia": 3,
+      "asharq": 10
+    },
+    "recent_ocr_by_channel": {
+      "sky_uk": 10,
+      "asharq": 20,
+      "alarabiya": 14,
+      "alhadath": 9,
+      "sky_arabia": 13,
+      "aljazeera": 10
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "8f91c79e-2777-4e95-99e3-485262cb3528",
+        "capture_to_receive_seconds": 0.633739
+      },
+      "alarabiya": {
+        "id": "a5467458-b962-4c75-9b1c-44cad8775cd3",
+        "capture_to_receive_seconds": 15.505738
+      },
+      "alhadath": {
+        "id": "05b52f75-b9fa-47c7-a438-297a50e6303d",
+        "capture_to_receive_seconds": 19.801712
+      },
+      "sky_arabia": {
+        "id": "6fadf6d7-7b99-4926-bed9-887566397c75",
+        "capture_to_receive_seconds": 10.751154
+      },
+      "asharq": {
+        "id": "96ec93f9-2d9a-4c51-9260-5369768c5840",
+        "capture_to_receive_seconds": 33.481581
+      }
+    }
+  },
+  {
+    "sample": 11,
+    "http_seconds": 0.01081170800171094,
+    "metrics": {
+      "evidence": 830,
+      "pending": 0,
+      "hot_vectors": 830,
+      "latency_p95_ms": 34.17,
+      "processed": 398,
+      "uptime_seconds": 230,
+      "device": "cpu",
+      "encoder": "multilingual-minilm",
+      "warm_status": "connected",
+      "llm": "configured",
+      "mode": "live",
+      "paused": false,
+      "ws_resyncs": 0,
+      "regex_timeouts": 0,
+      "jobs_pending": 0
+    },
+    "channel_states": {
+      "aljazeera": "connected",
+      "alarabiya": "connected",
+      "alhadath": "connected",
+      "sky_arabia": "connected",
+      "asharq": "connected",
+      "sky_uk": "connected"
+    },
+    "recent_audio_by_channel": {
+      "sky_uk": 23,
+      "sky_arabia": 4,
+      "alarabiya": 7,
+      "asharq": 5,
+      "alhadath": 5
+    },
+    "recent_ocr_by_channel": {
+      "asharq": 16,
+      "sky_arabia": 15,
+      "alhadath": 11,
+      "alarabiya": 14,
+      "sky_uk": 11,
+      "aljazeera": 9
+    },
+    "synthetic_events": 0,
+    "latest_audio": {
+      "sky_uk": {
+        "id": "f664b5d1-459a-45ed-85bd-b722e7aac94d",
+        "capture_to_receive_seconds": 0.649413
+      },
+      "sky_arabia": {
+        "id": "9acb5d2f-8a9d-466e-b161-7e68fa304d4b",
+        "capture_to_receive_seconds": 8.519693
+      },
+      "alarabiya": {
+        "id": "6aa8858b-480f-4407-a7a4-c51cfef6e453",
+        "capture_to_receive_seconds": 19.642427
+      },
+      "asharq": {
+        "id": "fde775d9-15b7-4543-89d9-ba61f088e6fc",
+        "capture_to_receive_seconds": 4.883741
+      },
+      "alhadath": {
+        "id": "3f39aea2-d0f8-45f8-80eb-a6de680b5553",
+        "capture_to_receive_seconds": 10.013109
+      }
+    }
+  }
+]

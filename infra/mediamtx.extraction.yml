@@ -1,0 +1,58 @@
+# Optional extraction overlay; base service settings mirror mediamtx.yml.
+logLevel: info
+api: no
+metrics: yes
+metricsAddress: :9998
+rtsp: yes
+rtspAddress: :8554
+rtmp: no
+hls: yes
+hlsAddress: :8888
+hlsVariant: lowLatency
+hlsPartDuration: 200ms
+hlsAllowOrigins: ['http://127.0.0.1:8000', 'http://localhost:8000', 'http://127.0.0.1:5173']
+webrtc: no
+srt: yes
+srtAddress: :8890
+pathDefaults:
+  source: publisher
+  record: yes
+  recordPath: /recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+  recordFormat: fmp4
+  recordPartDuration: 1s
+  recordSegmentDuration: 1h
+  recordDeleteAfter: 24h
+paths:
+  aljazeera:
+    source: https://live-hls-web-aja-gcp.thehlive.com/AJA/index.m3u8
+    sourceOnDemand: no
+    record: no
+  alarabiya:
+    source: https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
+    sourceOnDemand: no
+    record: no
+  alhadath:
+    source: https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
+    sourceOnDemand: no
+    record: no
+  sky_arabia:
+    source: https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8
+    sourceOnDemand: no
+    record: no
+  asharq:
+    source: https://live-news-v2.asharq.com/asharq.m3u8
+    sourceOnDemand: no
+    record: no
+  sky_uk:
+    source: https://linear901-oo-hls0-prd-gtm.delivery.skycdp.com/17501/sde-fast-skynews/master.m3u8
+    sourceOnDemand: no
+    record: no
+  '~^(ktv1|bloomberg|cnn|cnbc_arabia|bbc|cbs|nbc)$':
+    source: publisher
+    runOnDemand: python3 /opt/dira/extractor_hook.py
+    runOnDemandRestart: yes
+    runOnDemandStartTimeout: 90s
+    runOnDemandCloseAfter: 10s
+  all_others:
+# Container ports expose RTSP/TCP; do not negotiate unmapped RTP/RTCP UDP ports.
+rtspTransports: [tcp]

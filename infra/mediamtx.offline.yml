@@ -1,0 +1,34 @@
+logLevel: info
+api: no
+metrics: yes
+metricsAddress: :9998
+rtsp: yes
+rtspAddress: :8554
+rtmp: no
+hls: yes
+hlsAddress: :8888
+hlsVariant: lowLatency
+hlsPartDuration: 200ms
+hlsAllowOrigins: ['http://127.0.0.1:8000', 'http://localhost:8000', 'http://127.0.0.1:5173']
+webrtc: no
+srt: yes
+srtAddress: :8890
+pathDefaults:
+  source: publisher
+  record: yes
+  recordPath: /recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+  recordFormat: fmp4
+  recordPartDuration: 1s
+  recordSegmentDuration: 1h
+  recordDeleteAfter: 24h
+paths:
+  # Secondary ingest template (opt-in overlay enables this using a Python-capable image).
+  # '~^(ktv1|bloomberg|cnn|cnbc_arabia|bbc|cbs|nbc)$':
+  #   source: publisher
+  #   runOnDemand: python3 /opt/dira/extractor_hook.py
+  #   runOnDemandRestart: yes
+  #   runOnDemandStartTimeout: 90s
+  #   runOnDemandCloseAfter: 10s
+  all_others:
+# Container ports expose RTSP/TCP; do not negotiate unmapped RTP/RTCP UDP ports.
+rtspTransports: [tcp]

@@ -1,0 +1,426 @@
+{
+  "at": "2026-11-17T12:03:13.063850+00:00",
+  "note": "Read-only search smoke; no human-labeled precision benchmark or factual verification.",
+  "queries": [
+    {
+      "query": "explosions Sanaa",
+      "elapsed_ms": 258.62,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "10edb7ec-48dc-457c-8d3e-2d9ec8ee94d0",
+          "channel": "sky_arabia",
+          "cosine": 0.5768,
+          "lexical": false,
+          "text": "الحرس الثوري انفجارات وحرائق بسفينتين إثر اصطدامهما بألغام بحرية في مضيق هرمز 15:41 UAE"
+        },
+        {
+          "id": "71f9ef1d-9a9d-4aaf-9dd2-9e27dad6a9b7",
+          "channel": "alarabiya",
+          "cosine": 0.6244,
+          "lexical": false,
+          "text": "افادت مصادر من صنع بوقع ثلاثة انفجارات يعتقد أنها ناجمة عن غارات قرب معسكر الحفا وانفجار رابع في جبل نقم."
+        },
+        {
+          "id": "790cad4f-1b7c-4fe8-8be2-422f102e8b8f",
+          "channel": "alhadath",
+          "cosine": 0.5468,
+          "lexical": false,
+          "text": "لهموا والذين كانوا برفقة هذه المتفجرات"
+        },
+        {
+          "id": "8b4c4046-9e12-460e-8d91-7973878b633a",
+          "channel": "alhadath",
+          "cosine": 0.7973,
+          "lexical": false,
+          "text": "مصادر من صنعاء انفجارات قرب معسكر الحفا وانفجار رابع في جيل نقم"
+        },
+        {
+          "id": "5c2aa0ca-da33-4b23-83cd-f6f48d34b5e8",
+          "channel": "sky_arabia",
+          "cosine": 0.5274,
+          "lexical": false,
+          "text": "الحرس الثوري انفجارات وحرائق بسفينتين إثر اصطدامهما بألغام بحرية في مضيق هرمز"
+        }
+      ]
+    },
+    {
+      "query": "explosions in Sanaa",
+      "elapsed_ms": 342.89,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "10edb7ec-48dc-457c-8d3e-2d9ec8ee94d0",
+          "channel": "sky_arabia",
+          "cosine": 0.5816,
+          "lexical": false,
+          "text": "الحرس الثوري انفجارات وحرائق بسفينتين إثر اصطدامهما بألغام بحرية في مضيق هرمز 15:41 UAE"
+        },
+        {
+          "id": "71f9ef1d-9a9d-4aaf-9dd2-9e27dad6a9b7",
+          "channel": "alarabiya",
+          "cosine": 0.6284,
+          "lexical": false,
+          "text": "افادت مصادر من صنع بوقع ثلاثة انفجارات يعتقد أنها ناجمة عن غارات قرب معسكر الحفا وانفجار رابع في جبل نقم."
+        },
+        {
+          "id": "790cad4f-1b7c-4fe8-8be2-422f102e8b8f",
+          "channel": "alhadath",
+          "cosine": 0.5496,
+          "lexical": false,
+          "text": "لهموا والذين كانوا برفقة هذه المتفجرات"
+        },
+        {
+          "id": "8b4c4046-9e12-460e-8d91-7973878b633a",
+          "channel": "alhadath",
+          "cosine": 0.8143,
+          "lexical": false,
+          "text": "مصادر من صنعاء انفجارات قرب معسكر الحفا وانفجار رابع في جيل نقم"
+        },
+        {
+          "id": "5c2aa0ca-da33-4b23-83cd-f6f48d34b5e8",
+          "channel": "sky_arabia",
+          "cosine": 0.5283,
+          "lexical": false,
+          "text": "الحرس الثوري انفجارات وحرائق بسفينتين إثر اصطدامهما بألغام بحرية في مضيق هرمز"
+        }
+      ]
+    },
+    {
+      "query": "انفجارات صنعاء",
+      "elapsed_ms": 273.03,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "9996f6c9-9edb-4889-9b83-ad103e59ad76",
+          "channel": "alarabiya",
+          "cosine": 0.8005,
+          "lexical": true,
+          "text": "انفجارات ناجمة عن غارات على تحصينات وانفاق مخازن سلاح ب معسكر بيت دهرة إذن مصادر من صنعاء"
+        },
+        {
+          "id": "941a5693-0f0a-460d-943b-0d3e53e5c60a",
+          "channel": "alarabiya",
+          "cosine": 0.8752,
+          "lexical": true,
+          "text": "من صنعاء انفجارات في عدة ثكنات حوثية"
+        },
+        {
+          "id": "592a802a-1f7e-4ffe-83e5-d47f35ec46eb",
+          "channel": "alhadath",
+          "cosine": 0.8588,
+          "lexical": true,
+          "text": "مصادر من صنعاء انفجارات في عدة ثكنات حوثية في بني جرموز بمديرية بني الحارث"
+        },
+        {
+          "id": "d7e1b8f5-f76a-4079-af12-1d0be26cbad0",
+          "channel": "alarabiya",
+          "cosine": 0.591,
+          "lexical": true,
+          "text": "عاجلمصادر من صنعاء انفجارات ناجمة عن غارات على تحصينات وأتفاق ومخازن سلاح بمعسكر بيت دهرة المفوضية الأوروبية ترفع توقعاتها لنمو اقتصاد منطقة اليورو إلىفي"
+        },
+        {
+          "id": "03b64b00-40ae-4dde-967a-c211d1c7ff4b",
+          "channel": "alarabiya",
+          "cosine": 0.7801,
+          "lexical": true,
+          "text": "عاجلمصادر من صنعاء انفجارات في عدة ثكنات حوثية في بني جرموزبمديرية بني الحارث"
+        }
+      ]
+    },
+    {
+      "query": "أسعار النفط",
+      "elapsed_ms": 297.75,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "f2642b8a-33d1-4711-9ac9-88808a1abebb",
+          "channel": "asharq",
+          "cosine": 0.7157,
+          "lexical": true,
+          "text": "لها منذ أغسطس من عام ألف وتسعمائة واثنين وثمانين وبالتالي لا تسعير يذكر حتى اللحظة وإن كان أسعار النفط سجل ارتفاعات تعتبرها مشيئة بناءًا على هذين العامين."
+        },
+        {
+          "id": "3adc0a90-950d-4edc-a1ea-e2d57c37265a",
+          "channel": "alarabiya",
+          "cosine": 0.7586,
+          "lexical": true,
+          "text": " لنقم الآن مشاهدينا بتحديد لتدويات أسواق الأسهم العالمية. هذه نظرة على أسعار النفط كما أشرنا أسعار النفط عادة لترتفع إلى م فوق اثنين وتسعين دولار للبرميل. كانت دونها صباح هذا اليوم في الجلسة الآسيوية. هذا بالرغم من طبعا "
+        },
+        {
+          "id": "9302990c-93ac-49f5-8088-40b25bbfaf38",
+          "channel": "asharq",
+          "cosine": 0.7059,
+          "lexical": true,
+          "text": "تدعم ارتفاع أسعار النفط أول هذه المعطيات هو استمرار الهجمات على ناقلات النفط في مديق هرمز والتهديدات الحوثية أيضا على باب المندب ولا ننسى أيضا بيانات وزارة الطاقة الأمريكية أن مخزونات النفط الخام من الاحتياطيات الاستراتي"
+        },
+        {
+          "id": "2a74c7d8-659d-4c28-a358-3ef6683c028a",
+          "channel": "asharq",
+          "cosine": 0.734,
+          "lexical": true,
+          "text": "أسعار النفط بين ضغوط وفرة الإمدادات واضطرابات المنطقة"
+        },
+        {
+          "id": "beab1ff6-ba39-463a-b667-bcf07e609cde",
+          "channel": "asharq",
+          "cosine": 0.6411,
+          "lexical": true,
+          "text": "هناك تحيلات أيضا ربما تضغط على تحركات أسعار النفط ذهبة إليها بعض المحللون وهي أن ربما هناك مخاوف من فائض في المعروض المتوقع"
+        }
+      ]
+    },
+    {
+      "query": "oil prices",
+      "elapsed_ms": 277.27,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "1d85dde9-4964-49c9-b296-53e1161d451e",
+          "channel": "sky_uk",
+          "cosine": 0.4654,
+          "lexical": true,
+          "text": "All been affected by a huge spike in oil and gas prices, caused by the US."
+        },
+        {
+          "id": "a55ee369-73b1-49f7-ba8e-cb12b6427a2d",
+          "channel": "asharq",
+          "cosine": 0.331,
+          "lexical": true,
+          "text": "أه، still exists، and that's why I think prices are probably close to to the bottom end of the range."
+        },
+        {
+          "id": "48977f2f-a719-4b7f-8dbb-071e58cbbc3a",
+          "channel": "sky_uk",
+          "cosine": 0.2947,
+          "lexical": true,
+          "text": "many Southeast Asian countries affected by oil and gas shortages it all comes ahead of the historic trilateral meeting"
+        },
+        {
+          "id": "3adc0a90-950d-4edc-a1ea-e2d57c37265a",
+          "channel": "alarabiya",
+          "cosine": 0.7335,
+          "lexical": false,
+          "text": " لنقم الآن مشاهدينا بتحديد لتدويات أسواق الأسهم العالمية. هذه نظرة على أسعار النفط كما أشرنا أسعار النفط عادة لترتفع إلى م فوق اثنين وتسعين دولار للبرميل. كانت دونها صباح هذا اليوم في الجلسة الآسيوية. هذا بالرغم من طبعا "
+        },
+        {
+          "id": "ff62c6cb-6d17-4f6d-bacc-708636e68897",
+          "channel": "alarabiya",
+          "cosine": 0.7178,
+          "lexical": false,
+          "text": "الطاقة ارتفاع أسعار النفطرغم تعافي الإمدادات وترايد المخاوف من تخمة المعروض 86.06 الدوري الإنكليزيكريستال بالاس يتعاقد مع المدرب الدنماركي توماس فرانك 11:34MOR"
+        }
+      ]
+    },
+    {
+      "query": "shipping ports",
+      "elapsed_ms": 280.77,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "6e969d6d-de29-4fb2-acf6-5fa9581d00cf",
+          "channel": "sky_arabia",
+          "cosine": 0.4798,
+          "lexical": false,
+          "text": "هيئة بحرية بريطانية تقارير عن تعرض سفينة لاستهداف شمالي ميناء خصب الغُماني"
+        },
+        {
+          "id": "8cd4ed0b-21c6-417b-8655-ef386d970a43",
+          "channel": "sky_arabia",
+          "cosine": 0.5745,
+          "lexical": false,
+          "text": "مجد ميناء الجزار"
+        },
+        {
+          "id": "72673a42-928f-4801-b289-a5e5c9d11db4",
+          "channel": "sky_arabia",
+          "cosine": 0.7694,
+          "lexical": false,
+          "text": "شركات الشحن"
+        },
+        {
+          "id": "dc0656e8-1d26-41ae-8e65-7ced508577d7",
+          "channel": "sky_uk",
+          "cosine": 0.6778,
+          "lexical": false,
+          "text": "9 Port Staniey"
+        },
+        {
+          "id": "0132828f-715f-439d-82cf-0137eeb462f3",
+          "channel": "sky_uk",
+          "cosine": 0.648,
+          "lexical": false,
+          "text": "Port Stanley"
+        }
+      ]
+    },
+    {
+      "query": "الموانئ",
+      "elapsed_ms": 258.7,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "be3b4887-6518-485d-ad4c-6e5df8c882ee",
+          "channel": "sky_arabia",
+          "cosine": 0.1395,
+          "lexical": true,
+          "text": "وتخطت للهجمات الداخلية التي نتحدث عنها في الداخل الأمريكي وبالتالي حقيقة يعني الإدارة الأمريكية بعث قادل لم تكن مخطئة في بداية هذه الحرب ولكنها أخطأت في إدارة هذه الحرب من من عدة نواحي ربما من عدم فرض أيضا الحصار على الم"
+        },
+        {
+          "id": "4ae218d1-6dc2-44e8-abf6-b08e3ac663e1",
+          "channel": "sky_arabia",
+          "cosine": 0.9501,
+          "lexical": false,
+          "text": "أبوظبج"
+        },
+        {
+          "id": "95eaffec-bf78-44ea-b87e-81ae2a307848",
+          "channel": "alhadath",
+          "cosine": 0.9687,
+          "lexical": false,
+          "text": "اللاتي"
+        },
+        {
+          "id": "bc9d92a4-6c54-45e4-bbcd-5d0b77b2d05a",
+          "channel": "alhadath",
+          "cosine": 0.9704,
+          "lexical": false,
+          "text": "عاجـل"
+        },
+        {
+          "id": "f9735244-f393-427b-9344-cef6acdb5970",
+          "channel": "sky_arabia",
+          "cosine": 0.9606,
+          "lexical": false,
+          "text": "مثبط"
+        }
+      ]
+    },
+    {
+      "query": "Kuwait parliament dissolved",
+      "elapsed_ms": 261.91,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "f6b958e2-fc9e-44ae-bcc7-fa4367f26232",
+          "channel": "aljazeera",
+          "cosine": 0.4569,
+          "lexical": false,
+          "text": "ورقة السلاح في دع الحكومة اللبنانية"
+        },
+        {
+          "id": "fe5831b1-0751-4aaf-beca-1285ecdff325",
+          "channel": "asharq",
+          "cosine": 0.5759,
+          "lexical": false,
+          "text": "الكويت"
+        },
+        {
+          "id": "6ebb5b50-e235-466b-bf11-068c6a69dfdf",
+          "channel": "alhadath",
+          "cosine": 0.4512,
+          "lexical": false,
+          "text": "وتحديداً عندما أصدرت الحكومة اللبنانية في 2 أذار بحل"
+        },
+        {
+          "id": "7f466a1f-ee6a-44db-be62-7b4e22c91d84",
+          "channel": "asharq",
+          "cosine": 0.5251,
+          "lexical": false,
+          "text": "الكويت أكثرنشاطا"
+        },
+        {
+          "id": "997d0937-e5ba-4a9b-a134-6575c10ee0e5",
+          "channel": "aljazeera",
+          "cosine": 0.4445,
+          "lexical": false,
+          "text": "مع السلطة السياسية اللبنانية"
+        }
+      ]
+    },
+    {
+      "query": "الكويت",
+      "elapsed_ms": 358.16,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "fe5831b1-0751-4aaf-beca-1285ecdff325",
+          "channel": "asharq",
+          "cosine": 1.0,
+          "lexical": true,
+          "text": "الكويت"
+        },
+        {
+          "id": "7f466a1f-ee6a-44db-be62-7b4e22c91d84",
+          "channel": "asharq",
+          "cosine": 0.8389,
+          "lexical": true,
+          "text": "الكويت أكثرنشاطا"
+        },
+        {
+          "id": "a730898e-7e87-4ef4-97f2-af541f325a6c",
+          "channel": "asharq",
+          "cosine": 0.9197,
+          "lexical": true,
+          "text": "الكويت القاهرة"
+        },
+        {
+          "id": "6847108c-50e2-4a66-86c1-ad454e47f6f1",
+          "channel": "asharq",
+          "cosine": 0.5522,
+          "lexical": true,
+          "text": "الكويت وطنية مخازن مشاريع بنك الخليج -5.41% 175.00 -3.55% 163.00 +9.60% 77.60 -0.30% 332.00 PHC الاستثمارات الوطنية مجموعة بيوت الاستثمارية أعيان -6.98% 0.16 -4.00% 240.00 -0.66% 299.00 -0.32% 312.00"
+        },
+        {
+          "id": "542e49e2-9f27-4993-b95b-0a56ba228527",
+          "channel": "asharq",
+          "cosine": 0.5708,
+          "lexical": true,
+          "text": "الكويت وطنية مخازن مشاريع بنك الخليج 163.00 +9.60% 77.60 -0.30% 332.00 الاستثمارات الوطنية مجموعة بيوت الاستثمارية أعيان 299.00 -0.32% 312.00"
+        }
+      ]
+    },
+    {
+      "query": "disability benefits",
+      "elapsed_ms": 262.57,
+      "floor": 0.3,
+      "hits": [
+        {
+          "id": "07654133-9456-4d5d-ae8b-3db457bcada5",
+          "channel": "sky_uk",
+          "cosine": 0.7296,
+          "lexical": true,
+          "text": "Show the number of young people claiming disability benefits."
+        },
+        {
+          "id": "02f4642c-8834-4e09-9b1f-820828e3c3e7",
+          "channel": "sky_uk",
+          "cosine": 0.8448,
+          "lexical": true,
+          "text": "Disability."
+        },
+        {
+          "id": "5ef6fcd5-e05e-4103-bce6-40637338bbdb",
+          "channel": "sky_uk",
+          "cosine": 0.7026,
+          "lexical": true,
+          "text": "A move away from my disability benefits to a new youth allowance."
+        },
+        {
+          "id": "127b2fb0-a6c2-4b94-ac72-af31b471a2b3",
+          "channel": "sky_uk",
+          "cosine": 0.4146,
+          "lexical": true,
+          "text": "Milburn: Life on benefits is \"ruinous\" for young people"
+        },
+        {
+          "id": "8238729d-b53c-49ac-9be2-ce6f7d713b0a",
+          "channel": "sky_uk",
+          "cosine": 0.4895,
+          "lexical": true,
+          "text": "Milburn: Life on benefits is \"ruinous\" for young people £1 = €1.20"
+        }
+      ]
+    }
+  ]
+}

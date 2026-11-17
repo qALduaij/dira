@@ -1,0 +1,59 @@
+[
+  {
+    "id": "aljazeera",
+    "name": "Al Jazeera",
+    "name_ar": "الجزيرة",
+    "language": "ar",
+    "input_url": "rtsp://127.0.0.1:8554/aljazeera",
+    "playback_url": "http://127.0.0.1:8888/aljazeera/index.m3u8",
+    "audio_stream_index": 0
+  },
+  {
+    "id": "alarabiya",
+    "name": "Al Arabiya",
+    "name_ar": "العربية",
+    "language": "ar",
+    "input_url": "rtsp://127.0.0.1:8554/alarabiya",
+    "playback_url": "http://127.0.0.1:8888/alarabiya/index.m3u8",
+    "audio_stream_index": 0
+  },
+  {
+    "id": "alhadath",
+    "name": "Al Hadath",
+    "name_ar": "الحدث",
+    "language": "ar",
+    "input_url": "rtsp://127.0.0.1:8554/alhadath",
+    "playback_url": "http://127.0.0.1:8888/alhadath/index.m3u8",
+    "audio_stream_index": 0
+  },
+  {
+    "id": "sky_arabia",
+    "name": "Sky News Arabia",
+    "name_ar": "سكاي نيوز عربية",
+    "language": "ar",
+    "input_url": "rtsp://127.0.0.1:8554/sky_arabia",
+    "playback_url": "http://127.0.0.1:8888/sky_arabia/index.m3u8",
+    "audio_stream_index": 0
+  },
+  {
+    "id": "asharq",
+    "name": "Asharq",
+    "name_ar": "الشرق",
+    "language": "ar",
+    "input_url": "rtsp://127.0.0.1:8554/asharq",
+    "playback_url": "http://127.0.0.1:8888/asharq/index.m3u8",
+    "audio_stream_index": 0
+  },
+  {
+    "id": "sky_uk",
+    "name": "Sky News UK",
+    "name_ar": "سكاي نيوز البريطانية",
+    "language": "en",
+    "input_url": "rtsp://127.0.0.1:8554/sky_uk",
+    "playback_url": "http://127.0.0.1:8888/sky_uk/index.m3u8",
+    "audio_stream_index": 0,
+    "asr_url": "ws://127.0.0.1:8003/asr",
+    "ocr_model_dir": "models/ocr-en",
+    "ocr_recognition_model": "en_PP-OCRv5_mobile_rec"
+  }
+]

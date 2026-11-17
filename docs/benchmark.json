@@ -1,0 +1,19 @@
+{
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "configuration": {
+    "vectors": 1000,
+    "dimension": 256,
+    "keyword_rules": 3
+  },
+  "keyword_gate": {
+    "p50_ms": 0.0386,
+    "p95_ms": 0.0457,
+    "p99_ms": 0.0845
+  },
+  "hot_faiss": {
+    "p50_ms": 0.3542,
+    "p95_ms": 0.4105,
+    "p99_ms": 0.4712
+  },
+  "note": "Local synthetic component benchmark. Does not include ASR/OCR, satellite transport, model inference or production concurrency."
+}

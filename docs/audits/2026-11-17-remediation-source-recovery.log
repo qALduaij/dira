@@ -1,0 +1,16 @@
+2026/11/17 11:57:18 ERR [path aljazeera] [HLS source] next segment not found or not ready yet
+2026/11/17 11:57:25 INF [path aljazeera] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:01:46 INF [HLS] [muxer aljazeera] created (requested by 172.25.0.1:64168)
+2026/11/17 12:01:46 INF [HLS] [muxer aljazeera] is converting into HLS, 2 tracks (MPEG-4 Audio, H264)
+2026/11/17 12:05:55 ERR [path aljazeera] [HLS source] context deadline exceeded (Client.Timeout or context cancellation while reading body)
+2026/11/17 12:05:55 INF [HLS] [muxer aljazeera] destroyed: terminated
+2026/11/17 12:06:04 INF [path aljazeera] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:06:14 ERR [path aljazeera] [HLS source] net/http: request canceled (Client.Timeout or context cancellation while reading body)
+2026/11/17 12:06:20 INF [path aljazeera] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:08:00 ERR [path aljazeera] [HLS source] net/http: request canceled (Client.Timeout or context cancellation while reading body)
+2026/11/17 12:08:07 INF [path aljazeera] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:08:30 INF [HLS] [muxer aljazeera] created (requested by 172.25.0.1:59372)
+2026/11/17 12:08:30 INF [HLS] [muxer aljazeera] is converting into HLS, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:09:07 ERR [path aljazeera] [HLS source] context deadline exceeded
+2026/11/17 12:09:07 INF [HLS] [muxer aljazeera] destroyed: terminated
+2026/11/17 12:09:13 INF [path aljazeera] stream is available and online, 2 tracks (H264, MPEG-4 Audio)

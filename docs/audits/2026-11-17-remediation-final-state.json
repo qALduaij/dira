@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-17T12:16:29.834640+00:00",
+  "mode": "live",
+  "evidence": 21801,
+  "pending": 0,
+  "llm": "cloud",
+  "automatic_cloud": false,
+  "lag_seconds": 48.3,
+  "lag_cap": 90.0,
+  "uptime_seconds": 930,
+  "channels": [
+    {
+      "id": "aljazeera",
+      "status": "connected",
+      "asr_lag_seconds": 48.3,
+      "asr_resets": 0
+    },
+    {
+      "id": "alarabiya",
+      "status": "connected",
+      "asr_lag_seconds": 19.3,
+      "asr_resets": 1
+    },
+    {
+      "id": "alhadath",
+      "status": "connected",
+      "asr_lag_seconds": 27.6,
+      "asr_resets": 0
+    },
+    {
+      "id": "sky_arabia",
+      "status": "connected",
+      "asr_lag_seconds": 33.5,
+      "asr_resets": 2
+    },
+    {
+      "id": "asharq",
+      "status": "connected",
+      "asr_lag_seconds": 22.1,
+      "asr_resets": 0
+    },
+    {
+      "id": "sky_uk",
+      "status": "connected",
+      "asr_lag_seconds": 1.4,
+      "asr_resets": 0
+    }
+  ]
+}

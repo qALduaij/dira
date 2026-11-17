@@ -1,0 +1,170 @@
+{
+  "channel": "alarabiya",
+  "metrics": {
+    "evidence": 45,
+    "pending": 1,
+    "hot_vectors": 45,
+    "latency_p95_ms": 1105.94,
+    "processed": 45,
+    "uptime_seconds": 124,
+    "device": "mps",
+    "encoder": "multilingual-minilm",
+    "warm_status": "connected",
+    "llm": "configured",
+    "mode": "live",
+    "paused": false,
+    "ws_resyncs": 0,
+    "regex_timeouts": 0,
+    "history": [
+      {
+        "time": "2026-11-17T09:00:14.027750+00:00",
+        "events": 0,
+        "latency_ms": 0
+      },
+      {
+        "time": "2026-11-17T09:00:17.028918+00:00",
+        "events": 0,
+        "latency_ms": 0
+      },
+      {
+        "time": "2026-11-17T09:00:21.817102+00:00",
+        "events": 0,
+        "latency_ms": 0
+      },
+      {
+        "time": "2026-11-17T09:00:25.345176+00:00",
+        "events": 1,
+        "latency_ms": 894.63
+      },
+      {
+        "time": "2026-11-17T09:00:30.652728+00:00",
+        "events": 3,
+        "latency_ms": 173.22
+      },
+      {
+        "time": "2026-11-17T09:00:35.188248+00:00",
+        "events": 5,
+        "latency_ms": 50.85
+      },
+      {
+        "time": "2026-11-17T09:00:38.297804+00:00",
+        "events": 8,
+        "latency_ms": 11.07
+      },
+      {
+        "time": "2026-11-17T09:00:42.538824+00:00",
+        "events": 9,
+        "latency_ms": 50.9
+      },
+      {
+        "time": "2026-11-17T09:00:48.309009+00:00",
+        "events": 12,
+        "latency_ms": 12.68
+      },
+      {
+        "time": "2026-11-17T09:00:52.143152+00:00",
+        "events": 15,
+        "latency_ms": 41.66
+      },
+      {
+        "time": "2026-11-17T09:00:55.178003+00:00",
+        "events": 16,
+        "latency_ms": 69.25
+      },
+      {
+        "time": "2026-11-17T09:00:59.692419+00:00",
+        "events": 19,
+        "latency_ms": 57.14
+      },
+      {
+        "time": "2026-11-17T09:01:04.614550+00:00",
+        "events": 21,
+        "latency_ms": 42.56
+      },
+      {
+        "time": "2026-11-17T09:01:10.207756+00:00",
+        "events": 24,
+        "latency_ms": 44.51
+      },
+      {
+        "time": "2026-11-17T09:01:14.894119+00:00",
+        "events": 26,
+        "latency_ms": 41.3
+      },
+      {
+        "time": "2026-11-17T09:01:18.830809+00:00",
+        "events": 28,
+        "latency_ms": 44.17
+      },
+      {
+        "time": "2026-11-17T09:01:22.192107+00:00",
+        "events": 29,
+        "latency_ms": 39.84
+      },
+      {
+        "time": "2026-11-17T09:01:25.193981+00:00",
+        "events": 30,
+        "latency_ms": 524.39
+      },
+      {
+        "time": "2026-11-17T09:01:30.344298+00:00",
+        "events": 31,
+        "latency_ms": 666.04
+      },
+      {
+        "time": "2026-11-17T09:01:34.022874+00:00",
+        "events": 31,
+        "latency_ms": 666.04
+      },
+      {
+        "time": "2026-11-17T09:01:37.022917+00:00",
+        "events": 33,
+        "latency_ms": 17.85
+      },
+      {
+        "time": "2026-11-17T09:01:40.952050+00:00",
+        "events": 33,
+        "latency_ms": 17.85
+      },
+      {
+        "time": "2026-11-17T09:01:44.627144+00:00",
+        "events": 34,
+        "latency_ms": 58.97
+      },
+      {
+        "time": "2026-11-17T09:01:47.999626+00:00",
+        "events": 36,
+        "latency_ms": 15.55
+      },
+      {
+        "time": "2026-11-17T09:01:52.044560+00:00",
+        "events": 37,
+        "latency_ms": 50.53
+      },
+      {
+        "time": "2026-11-17T09:01:55.206512+00:00",
+        "events": 37,
+        "latency_ms": 50.53
+      },
+      {
+        "time": "2026-11-17T09:02:00.128933+00:00",
+        "events": 39,
+        "latency_ms": 57.24
+      },
+      {
+        "time": "2026-11-17T09:02:05.412603+00:00",
+        "events": 41,
+        "latency_ms": 12.55
+      },
+      {
+        "time": "2026-11-17T09:02:09.930982+00:00",
+        "events": 44,
+        "latency_ms": 53.11
+      }
+    ],
+    "jobs_pending": 0
+  },
+  "audio_events": 9,
+  "ocr_events": 36,
+  "synthetic_events": 0
+}

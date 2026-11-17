@@ -1,0 +1,11 @@
+[
+  {
+    "id": "ktv1",
+    "name": "Kuwait TV",
+    "name_ar": "تلفزيون الكويت",
+    "input_url": "rtsp://127.0.0.1:8554/ktv1",
+    "playback_url": "http://127.0.0.1:8888/ktv1/index.m3u8",
+    "language": "ar",
+    "labels": ["person", "ship", "building"]
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "aljazeera",
+    "checked_at": "2026-11-17T08:14:55.165273+00:00",
+    "exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "id": "alarabiya",
+    "checked_at": "2026-11-17T08:14:55.165773+00:00",
+    "exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "id": "alhadath",
+    "checked_at": "2026-11-17T08:14:55.167282+00:00",
+    "exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "id": "sky_arabia",
+    "checked_at": "2026-11-17T08:14:55.169847+00:00",
+    "exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "id": "asharq",
+    "checked_at": "2026-11-17T08:14:55.171720+00:00",
+    "exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "id": "sky_uk",
+    "checked_at": "2026-11-17T08:14:55.173266+00:00",
+    "exit_code": 0,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  }
+]

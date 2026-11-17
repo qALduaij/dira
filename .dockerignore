@@ -1,0 +1,15 @@
+.venv
+.venv-asr
+.data
+.env
+secrets
+infra/extractors.json
+infra/feeds.json
+.git
+**/__pycache__
+frontend/node_modules
+frontend/dist
+master_skills
+test-results
+models
+.DS_Store
