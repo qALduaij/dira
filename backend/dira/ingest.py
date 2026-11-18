@@ -7,6 +7,7 @@ import math
 import platform
 import random
 import weakref
+from collections import deque
 from contextlib import suppress
 from datetime import timedelta
 from time import monotonic
@@ -64,6 +65,8 @@ def load_feeds(path):
             asr_lag_seconds=None,
             asr_resets=0,
             asr_skipped_seconds=0.0,
+            asr_degraded=False,
+            asr_last_reset_cause=None,
             ocr_unchanged_skips=0,
             ocr_worker_restarts=0,
             ocr_worker_pid=None,
@@ -73,16 +76,28 @@ def load_feeds(path):
 
 
 class ASRLagExceeded(Exception):
-    def __init__(self, lag):
-        super().__init__(f"ASR lag {lag:.0f}s exceeded the configured ceiling")
-        self.lag = lag
+    """`cause` is backlog, silent or wall_clock_jump; `estimate` is the coverage loss, bounded by session age."""
+
+    def __init__(self, lag, cause="backlog", estimate=None):
+        super().__init__(f"ASR lag {lag:.0f}s exceeded the configured ceiling ({cause})")
+        self.lag, self.cause = lag, cause
+        self.estimate = lag if estimate is None else estimate
 
 
 class ASRLag:
-    """Backlog reported by WhisperLiveKit, plus server silence beyond a grace period (a stalled session)."""
+    """Backlog reported by WhisperLiveKit, plus server silence beyond a grace period (a stalled session).
 
-    def __init__(self, now, grace=15.0):
-        self.reported, self.at, self.grace = 0.0, now, grace
+    WLK computes its backlog from the wall clock, so after host sleep a report can grow faster than real
+    time; that is a clock jump, not transcription backlog."""
+
+    def __init__(self, now, grace=15.0, jump_tolerance=5.0):
+        self.reported, self.at, self.grace, self.started = 0.0, now, grace, now
+        self.jump_tolerance, self.jumped = jump_tolerance, False
+
+    def cause(self, ceiling):
+        if self.jumped:
+            return "wall_clock_jump"
+        return "backlog" if self.reported >= ceiling else "silent"
 
     def update(self, payload, now):
         values = {}
@@ -98,15 +113,50 @@ class ASRLag:
             except (KeyError, TypeError, ValueError):
                 pass
         if values:
-            self.reported = max(
+            reported = max(
                 values.get("remaining_time_transcription", 0),
                 values.get("remaining_time_transcription_processing", 0)
                 + values.get("remaining_time_transcription_policy", 0),
             )
-            self.at = now
+            if reported - self.reported > (now - self.at) + self.jump_tolerance:
+                self.jumped = True
+            self.reported, self.at = reported, now
 
     def value(self, now):
         return self.reported + max(0.0, now - self.at - self.grace)
+
+
+ASR_DEGRADED_WINDOW, ASR_DEGRADED_RESETS = 600.0, 3
+ASR_RECOVERY, ASR_ALERT_COOLDOWN = 600.0, 1800.0
+
+
+class ASRHealth:
+    """Repeated speech resets mean ASR is not delivering; mark it degraded instead of looking connected."""
+
+    def __init__(self, feed):
+        self.feed, self.resets, self.alerted_at = feed, deque(), None
+
+    def reset(self, now):
+        """Record one reset; True when an operator alert is due (once per cooldown)."""
+        self.resets.append(now)
+        self.feed["_asr_last_reset"] = now
+        while now - self.resets[0] > ASR_DEGRADED_WINDOW:
+            self.resets.popleft()
+        if len(self.resets) < ASR_DEGRADED_RESETS:
+            return False
+        self.feed["asr_degraded"] = True
+        if self.alerted_at is not None and now - self.alerted_at < ASR_ALERT_COOLDOWN:
+            return False
+        self.alerted_at = now
+        return True
+
+
+def asr_recovered(feed, now):
+    """Clear degradation after a quiet period with no resets."""
+    if feed.get("asr_degraded") and now - feed.get("_asr_last_reset", now) >= ASR_RECOVERY:
+        feed["asr_degraded"] = False
+        return True
+    return False
 
 
 def seconds(value):
@@ -163,7 +213,7 @@ async def audio_session(runtime, feed):
             if config.get("type") != "config" or not config.get("useAudioWorklet"):
                 raise ValueError("WhisperLiveKit must run with --pcm-input")
             feed["status"] = "connecting"
-            feed["asr_status"] = "connected"
+            feed["asr_status"] = "degraded" if feed.get("asr_degraded") else "connected"
             ceiling = getattr(runtime.settings, "asr_max_lag", 0)
             lag = ASRLag(monotonic())
             feed["asr_lag_seconds"] = 0.0
@@ -178,10 +228,13 @@ async def audio_session(runtime, feed):
                 await socket.send(b"")
 
             def check_lag():
-                current = lag.value(monotonic())
+                now = monotonic()
+                if asr_recovered(feed, now):
+                    feed["asr_status"] = "connected"
+                current = lag.value(now)
                 feed["asr_lag_seconds"] = round(current, 1)
                 if ceiling and current > ceiling:
-                    raise ASRLagExceeded(current)
+                    raise ASRLagExceeded(current, lag.cause(ceiling), min(current, now - lag.started))
 
             sender = asyncio.create_task(send_audio())
             try:
@@ -413,20 +466,31 @@ async def frame_session(runtime, feed, ocr=None):
             group.create_task(observe_frames(runtime, feed, "visual"))
 
 
-async def speech_session(runtime, feed):
+async def speech_session(runtime, feed, health=None):
     """Bound speech staleness: drop the ASR backlog and rejoin live audio; video/OCR keep running."""
     while True:
         try:
             return await audio_session(runtime, feed)
         except ASRLagExceeded as exc:
             feed["asr_resets"] = feed.get("asr_resets", 0) + 1
-            feed["asr_skipped_seconds"] = round(feed.get("asr_skipped_seconds", 0.0) + exc.lag, 1)
+            feed["asr_skipped_seconds"] = round(feed.get("asr_skipped_seconds", 0.0) + exc.estimate, 1)
+            feed["asr_last_reset_cause"] = exc.cause
             feed["asr_lag_seconds"] = None
-            feed["asr_status"] = "reconnecting"
+            alert = health.reset(monotonic()) if health else False
+            feed["asr_status"] = "degraded" if feed.get("asr_degraded") else "reconnecting"
             feed["status"] = "reconnecting"
             if hasattr(runtime, "record_gap"):
-                await runtime.record_gap(feed, "asr_lag_limit", exc.lag)
-            log.warning("Feed %s ASR lag %.0fs exceeded ceiling; rejoining live audio", feed["id"], exc.lag)
+                await runtime.record_gap(feed, f"asr_{exc.cause}", exc.estimate)
+            if alert and hasattr(runtime, "health_alert"):
+                await runtime.health_alert(
+                    feed,
+                    f"Speech recognition degraded: {len(health.resets)} resets in "
+                    f"{ASR_DEGRADED_WINDOW / 60:.0f} min (last cause: {exc.cause}). Transcripts are incomplete.",
+                )
+            log.warning(
+                "Feed %s ASR reset (%s, lag %.0fs, est. loss %.0fs); rejoining live audio",
+                feed["id"], exc.cause, exc.lag, exc.estimate,
+            )
             runtime.bus.publish("channels", runtime.channels)
 
 
@@ -468,9 +532,14 @@ async def supervise_feed(runtime, feed):
         else None
     )
 
+    health = ASRHealth(feed)
+
     async def speech():
-        await speech_session(runtime, feed)
+        await speech_session(runtime, feed, health)
+        # A clean end (publisher EOF -> ready_to_stop) is still an interruption until the next session.
         feed["status"] = "reconnecting"
+        if hasattr(runtime, "record_gap"):
+            await runtime.record_gap(feed, "asr_session_end", None)
 
     async def speech_failed(exc):
         feed["status"] = "degraded"

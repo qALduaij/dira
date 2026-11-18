@@ -1,0 +1,17 @@
+window 2026-11-18T03:21:29.630143+00:00 -> 2026-11-18T05:21:33.178308+00:00; awake 7204s; samples 711; errors 0; sleep samples 0
+distinct OCR worker PIDs per channel: {'aljazeera': 1, 'alarabiya': 1, 'alhadath': 1, 'sky_arabia': 1, 'asharq': 1, 'sky_uk': 1}
+evidence +8223 (4109/h); processed +8223
+outbox pending median 1 max 17 last 0
+warm status: {'connected': 676, 'degraded': 35}
+ingest p95 (ms): median 71.5 max 179.3
+/api/snapshot ms: median 34 p95 124 max 691; /api/gaps ms median 12 max 209
+websocket probes 24 ok 24 ms median 40 max 244
+worst-channel lag: median 68.4 p95 88.6 max 90.1
+active_alerts 661 -> 724; ws_resyncs 0
+channel | connected | lag median/p95/max | resets in soak | est. loss s (% of soak) | OCR restarts | OCR not-connected samples | last_error_type
+aljazeera | 96.8% | 29/80/90 | 29 | 2614 (36.3%) | 0 | 10 | None
+alarabiya | 99.4% | 29/78/90 | 17 | 1532 (21.3%) | 0 | 2 | None
+alhadath | 99.0% | 34/81/90 | 26 | 2343 (32.5%) | 0 | 4 | None
+sky_arabia | 98.0% | 31/82/90 | 32 | 2883 (40.0%) | 0 | 2 | None
+asharq | 98.3% | 26/79/90 | 22 | 1983 (27.5%) | 0 | 7 | None
+sky_uk | 96.8% | 8/65/90 | 9 | 811 (11.3%) | 0 | 16 | None

@@ -62,7 +62,14 @@ for port in (8001, 8003):
 PY
 .venv/bin/python -m uvicorn dira.api:app --host 127.0.0.1 --port 8000 --workers 1 \
   > >(.venv/bin/python scripts/rotate_log.py logs/api-live.log) 2>&1 &
-children+=("$!")
+api_pid=$!
+children+=("$api_pid")
+# Host sleep silently removes coverage (audit 2026-11-18, N-01). Hold a sleep assertion for the API's lifetime.
+if command -v caffeinate >/dev/null; then
+  caffeinate -dims -w "$api_pid" &
+  children+=("$!")
+  echo 'Sleep prevented while Dira runs (closing a laptop lid without an external display still sleeps).'
+fi
 echo 'Dira is starting at http://127.0.0.1:8000 — logs in logs/. Ctrl-C stops API and ASR.'
 while true; do
   for pid in "${children[@]}"; do

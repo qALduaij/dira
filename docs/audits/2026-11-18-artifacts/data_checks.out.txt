@@ -1,0 +1,10 @@
+[18:50 (awake, busy)] lexical 10k window spans 1.77 h; hot 4k spans 41 min
+[17:20] lexical 10k window spans 1.89 h; hot 4k spans 42 min
+brief 1h: total=5632 sampled=80 distinct_minutes=17 span=0.93h channels={'alarabiya': 14, 'alhadath': 14, 'aljazeera': 13, 'asharq': 13, 'sky_arabia': 13, 'sky_uk': 13} first..last=17:54..18:49
+brief 4h: total=21925 sampled=80 distinct_minutes=16 span=3.70h channels={'alarabiya': 14, 'alhadath': 14, 'aljazeera': 13, 'asharq': 13, 'sky_arabia': 13, 'sky_uk': 13} first..last=15:08..18:49
+brief 24h: total=41067 sampled=80 distinct_minutes=6 span=5.54h channels={'alarabiya': 14, 'alhadath': 14, 'aljazeera': 13, 'asharq': 13, 'sky_arabia': 13, 'sky_uk': 13} first..last=13:17..18:49
+   sample minute histogram: [('15:0x', 2), ('16:5x', 2), ('13:1x', 1), ('18:4x', 1)]
+spike replay: obs=21105 new_topics=15674 (one per 0.9s; 128-topic memory ~1.9 min) spikes=9
+alerts awake 3.9h: 260 [(('warning', 'keyword'), 190), (('critical', 'keyword'), 59), (('warning', 'spike'), 9), (('info', 'keyword'), 2)]
+critical: 59 distinct 50-char prefixes: 48 top: [('تابعوا أحدث الأخبار لحظة ورودها على حسابنا للأخبار', 11), ('والماء ويحتاج الأشخاص ممن تعرضوا للغبار المشع إلى ', 2)]
+unacknowledged (active_alerts): 660 of 660

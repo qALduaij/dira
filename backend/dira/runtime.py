@@ -4,7 +4,8 @@ from datetime import timedelta
 import hashlib
 import logging
 import shutil
-from time import perf_counter
+from time import monotonic, perf_counter
+from time import time as wall_time
 from uuid import uuid4
 from zoneinfo import ZoneInfo
 from .models import Rule, Alert, utcnow
@@ -56,6 +57,8 @@ class Runtime:
         self.history = deque(maxlen=60)
         self.paused, self.counter, self.processed = False, 0, 0
         self.started = utcnow()
+        # macOS monotonic time stops during sleep while wall time continues; the difference is time asleep.
+        self._last_wall, self._last_mono = wall_time(), monotonic()
         self.disk_free_gb = shutil.disk_usage(settings.data_dir).free / 2**30
         self.channels = (
             [dict(c, status="simulated", playback_url="") for c in CHANNELS]
@@ -163,7 +166,7 @@ class Runtime:
         self.gates = GateEngine([Rule.model_validate(r) for r in self.db.objects("rule")])
         self.gates.recent = recent
 
-    async def record_gap(self, feed, reason, estimate):
+    async def record_gap(self, feed, reason, estimate, bounds_estimated=True):
         now = utcnow()
         gap = {
             "id": str(uuid4()),
@@ -171,10 +174,12 @@ class Runtime:
             "detected_at": now.isoformat(),
             "reason": reason,
             "estimated_lost_seconds": estimate,
-            "bounds_estimated": True,
+            "bounds_estimated": bounds_estimated,
             "start": (now - timedelta(seconds=estimate)).isoformat() if estimate is not None else None,
             "end": now.isoformat(),
-            "note": "Coverage interruption; duration is an estimate, not measured lost speech.",
+            "note": "Coverage interruption; duration is an estimate, not measured lost speech."
+            if bounds_estimated
+            else "Coverage interruption measured from host clocks (precision about one metrics tick).",
         }
         await asyncio.to_thread(self.db.save, "gap", gap)
         await asyncio.to_thread(
@@ -187,6 +192,31 @@ class Runtime:
             },
         )
         self.bus.publish("gap", gap)
+
+    async def check_host_sleep(self, threshold=10.0):
+        """Record one measured `host_sleep` gap per live channel when the host slept since the last check."""
+        wall, mono = wall_time(), monotonic()
+        slept = (wall - self._last_wall) - (mono - self._last_mono)
+        self._last_wall, self._last_mono = wall, mono
+        if slept <= threshold:
+            return 0
+        log.warning("Host slept for about %.0fs; recording coverage gaps", slept)
+        for channel in self.channels:
+            if channel.get("status") != "simulated":
+                await self.record_gap(channel, "host_sleep", round(slept, 1), bounds_estimated=False)
+        return slept
+
+    async def health_alert(self, feed, detail):
+        alert = Alert(
+            tdo_id=None,
+            channel_id=feed["id"],
+            rule_name="Speech recognition degraded",
+            severity="warning",
+            detail=detail,
+            kind="health",
+        )
+        await asyncio.to_thread(self.db.save, "alert", alert)
+        self.bus.publish("alert", alert.model_dump(mode="json"))
 
     async def encode_event(self, e):
         async with self.model_lock:
@@ -371,6 +401,10 @@ class Runtime:
 
     async def metrics_loop(self):
         while True:
+            try:
+                await self.check_host_sleep()
+            except Exception:
+                log.exception("Host sleep bookkeeping failed")
             self.disk_free_gb = (
                 await asyncio.to_thread(shutil.disk_usage, self.settings.data_dir)
             ).free / 2**30

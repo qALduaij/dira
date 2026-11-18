@@ -1,0 +1,34 @@
+window 2026-11-17 12:00:59+00:00 -> 2026-11-18 01:38:12.294683+00:00 13.62 h
+rows 25744 pending_at_end 4 pending_total 4
+sources {'whisperlivekit': 15666, 'local-perception': 10078} speaker_nonnull 0 confidence_nonnull 0
+hourly (Kuwait) asr/ocr:
+  11-17T15 3069 1534
+  11-17T16 3706 2103
+  11-17T17 3571 2025
+  11-17T18 3086 2054
+  11-17T19 71 46
+  11-17T20 260 133
+  11-17T21 489 279
+  11-17T22 68 33
+  11-17T23 419 217
+  11-18T00 92 87
+  11-18T01 102 83
+  11-18T02 67 26
+  11-18T03 367 272
+  11-18T04 299 1186
+per channel asr/ocr: {'alarabiya': (2145, 2687), 'alhadath': (2104, 1057), 'aljazeera': (2125, 769), 'asharq': (1824, 3132), 'sky_arabia': (2400, 1660), 'sky_uk': (5068, 773)}
+ASR inter-arrival (capture clock) max gaps >120s per channel:
+  alarabiya: n=2145 median_gap=4.0s p99=569s gaps>120s=32 sum=543min max=40.9min
+  alhadath: n=2104 median_gap=4.1s p99=537s gaps>120s=32 sum=534min max=41.3min
+  aljazeera: n=2125 median_gap=3.6s p99=446s gaps>120s=35 sum=544min max=61.2min
+  asharq: n=1824 median_gap=5.3s p99=835s gaps>120s=38 sum=547min max=34.4min
+  sky_arabia: n=2400 median_gap=3.7s p99=552s gaps>120s=38 sum=543min max=43.8min
+  sky_uk: n=5068 median_gap=2.2s p99=33s gaps>120s=37 sum=563min max=58.5min
+ASR exact-dup<=60s {'alarabiya': '8/2145', 'alhadath': '3/2104', 'aljazeera': '2/2125', 'asharq': '0/1824', 'sky_arabia': '2/2400', 'sky_uk': '27/5068'}
+OCR exact-repeat<=1h {'alarabiya': '439/2687', 'alhadath': '40/1057', 'aljazeera': '48/769', 'asharq': '327/3132', 'sky_arabia': '503/1660', 'sky_uk': '287/773'}
+gaps in session 487 [(('aljazeera', 'ExceptionGroup'), 51), (('sky_arabia', 'asr_lag_limit'), 41), (('alarabiya', 'asr_lag_limit'), 33), (('alhadath', 'ExceptionGroup'), 32), (('aljazeera', 'asr_lag_limit'), 31), (('alhadath', 'asr_lag_limit'), 31), (('asharq', 'asr_lag_limit'), 31), (('alarabiya', 'ExceptionGroup'), 29), (('sky_uk', 'asr_lag_limit'), 29), (('aljazeera', 'TimeoutError'), 26), (('sky_arabia', 'ExceptionGroup'), 26), (('sky_uk', 'TimeoutError'), 24), (('asharq', 'TimeoutError'), 20), (('asharq', 'ExceptionGroup'), 20), (('sky_uk', 'ExceptionGroup'), 19), (('sky_arabia', 'TimeoutError'), 15), (('alhadath', 'TimeoutError'), 15), (('alarabiya', 'TimeoutError'), 14)]
+estimated lost s (lag-limit only): {'alarabiya': '2976s=6.1%', 'alhadath': '4079s=8.3%', 'aljazeera': '2799s=5.7%', 'asharq': '3675s=7.5%', 'sky_arabia': '4638s=9.5%', 'sky_uk': '2613s=5.3%'}
+alert keys ['acknowledged', 'channel_id', 'detail', 'id', 'kind', 'rule_name', 'severity', 'simulated', 'tdo_id', 'timestamp'] total alerts 660
+feed_health [{'id': 'aljazeera', 'asr_resets': 31, 'asr_skipped_seconds': 2799.2}, {'id': 'sky_arabia', 'asr_resets': 41, 'asr_skipped_seconds': 4638.0}, {'id': 'alarabiya', 'asr_resets': 33, 'asr_skipped_seconds': 2975.7}, {'id': 'alhadath', 'asr_resets': 31, 'asr_skipped_seconds': 4079.0}, {'id': 'asharq', 'asr_resets': 31, 'asr_skipped_seconds': 3674.9}, {'id': 'sky_uk', 'asr_resets': 29, 'asr_skipped_seconds': 2613.2}]
+jobs [('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative'), ('done', None, 'narrative')] briefs 34
+config ids ['dataset', 'warm_target', 'rules_initialized', 'encoder'] schedule ['morning-2026-11-17']

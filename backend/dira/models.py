@@ -76,13 +76,13 @@ class Rule(BaseModel):
 
 class Alert(BaseModel):
     id: UUID = Field(default_factory=uuid4)
-    tdo_id: UUID
+    tdo_id: UUID | None = None  # None for system-health alerts that cite no observation
     channel_id: str
     timestamp: AwareDatetime = Field(default_factory=utcnow)
     rule_name: str
     severity: str
     detail: str
-    kind: Literal["keyword", "regex", "spike"]
+    kind: Literal["keyword", "regex", "spike", "health"]
     acknowledged: bool = False
     simulated: bool = False
 

@@ -137,7 +137,8 @@ export default function App() {
       setSearching(false);
     }
   }
-  async function evidence(id: string) {
+  async function evidence(id: string | null) {
+    if (!id) return; // health alerts cite no observation
     await action(async () => setSelected(await api<Event>("/evidence/" + id)));
   }
   async function generate(kind = "morning") {
@@ -1167,16 +1168,32 @@ const LAG_WARN_SECONDS = 30;
 function LagBadge({ channel, ar }: { channel: Channel; ar: boolean }) {
   const lag = channel.asr_lag_seconds;
   const resets = channel.asr_resets || 0;
-  const tone = lag == null ? "unknown" : lag > LAG_WARN_SECONDS ? "late" : "ok";
+  const degraded = Boolean(channel.asr_degraded);
+  const tone = degraded
+    ? "late"
+    : lag == null
+      ? "unknown"
+      : lag > LAG_WARN_SECONDS
+        ? "late"
+        : "ok";
   const label =
-    lag == null
+    (degraded ? "⚠ " : "") +
+    (lag == null
       ? ar
         ? "تفريغ —"
         : "ASR —"
-      : `${ar ? "تفريغ" : "ASR"} ${lag.toFixed(0)}s`;
-  const detail = ar
-    ? `تأخر التفريغ الصوتي. أعيد الضبط ${resets} مرة، الفقد التقديري ${Math.round(channel.asr_skipped_seconds || 0)} ث؛ ليس قياسًا دقيقًا للصوت المفقود.`
-    : `Speech transcription lag. Reset to live ${resets}× · ${Math.round(channel.asr_skipped_seconds || 0)} s estimated coverage loss (not measured skipped speech).`;
+      : `${ar ? "تفريغ" : "ASR"} ${lag.toFixed(0)}s`);
+  const cause = channel.asr_last_reset_cause;
+  const detail =
+    (degraded
+      ? ar
+        ? "التفريغ الصوتي متدهور: إعادات ضبط متكررة، والنصوص ناقصة. "
+        : "Speech recognition degraded: repeated resets, transcripts are incomplete. "
+      : "") +
+    (ar
+      ? `تأخر التفريغ الصوتي. أعيد الضبط ${resets} مرة، الفقد التقديري ${Math.round(channel.asr_skipped_seconds || 0)} ث؛ ليس قياسًا دقيقًا للصوت المفقود.`
+      : `Speech transcription lag. Reset to live ${resets}× · ${Math.round(channel.asr_skipped_seconds || 0)} s estimated coverage loss (not measured skipped speech).`) +
+    (cause ? (ar ? ` آخر سبب: ${cause}.` : ` Last cause: ${cause}.`) : "");
   return (
     <span className={"lag-badge " + tone} title={detail} aria-label={detail}>
       {label}
@@ -1372,7 +1389,7 @@ function BriefCard({
 }: {
   brief: Brief;
   ar: boolean;
-  onEvidence: (id: string) => void;
+  onEvidence: (id: string | null) => void;
 }) {
   return (
     <article className="panel brief-card">
@@ -1456,7 +1473,7 @@ function Signals({
 }: {
   state: Snapshot;
   ar: boolean;
-  onEvidence: (id: string) => void;
+  onEvidence: (id: string | null) => void;
   onError: (s: string) => void;
 }) {
   const [showAll, setShowAll] = useState(false);

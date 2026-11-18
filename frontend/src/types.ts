@@ -33,10 +33,12 @@ export type Channel = {
   asr_lag_seconds?: number | null;
   asr_resets?: number;
   asr_skipped_seconds?: number;
+  asr_degraded?: boolean;
+  asr_last_reset_cause?: string | null;
 };
 export type Alert = {
   id: string;
-  tdo_id: string;
+  tdo_id: string | null; // null for system-health alerts
   channel_id: string;
   timestamp: string;
   rule_name: string;
